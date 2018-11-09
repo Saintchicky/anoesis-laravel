@@ -15,6 +15,24 @@ header{
 .form-control::placeholder {
     color: white;
 }
+
+/*-----------Menu--------------*/
+.menu {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 10em;
+    padding: 1em;
+}
+.nav-item > a {
+    color:grey;
+    font-size:1em;
+}
+.nav-link:hover {
+    color: #fff;
+}
+.navbar-toggler:not(:disabled):not(.disabled) {
+    outline: none; /*remove dot around the element after click*/
+}
 /* Icon 1 */
 
 .animated-icon1{

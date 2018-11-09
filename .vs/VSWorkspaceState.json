@@ -1,10 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
     "\\public\\css",
-    "\\resources\\views"
+    "\\public\\img",
+    "\\resources\\sass",
+    "\\storage\\app",
+    "\\storage\\framework",
+    "\\storage\\framework\\cache"
   ],
-  "SelectedNode": "\\webpack.mix.js",
+  "SelectedNode": "\\public",
   "PreviewInSolutionExplorer": false
 }
