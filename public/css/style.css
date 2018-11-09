@@ -1,3 +1,10 @@
+section {
+    width: 80%;
+    margin: auto;
+    padding-top: 2.1rem;
+    padding-bottom: 2.1rem;
+  
+}
 header{
     background: rgba(0, 0, 0, 0.5);
     border-bottom: 1px solid #fff;
@@ -190,3 +197,52 @@ a.socialIcon:hover, .socialHoverClass {
 	transition: all 0.8s;
 }
 
+/*------------Title-------------*/
+h1 {
+    color: black;
+    background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(0,0,0,0.2));
+    padding-left: 0.7em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+}
+
+.block {
+    background-image: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1));
+    padding:1em;
+    color:#fff;
+}
+/*--------------tour date-----------*/
+.content-section{
+    color:#fff;
+}
+.tour-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+    border-bottom: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date {
+    font-weight: bold;
+    width: 11%;
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.tour-btn {
+    max-width: 19%;
+}

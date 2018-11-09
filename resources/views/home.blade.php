@@ -26,7 +26,24 @@
     </head>
     <body>
         @include('includes.nav')
+        <br>
+        <br>
+        <br>
+        <br>
         @include('includes.video')
-        @include('includes.aboute_me')
+        <br>
+        <br>
+        @include('includes.about_me')
+        <br>
+        <br>
+        @include('includes.tour_date')
+        <br>
+        <br>
+        @include('includes.music')
+        <br>
+        <br>
+        @include('includes.photos')
+        <br>
+        <br>
     </body>
 </html>
