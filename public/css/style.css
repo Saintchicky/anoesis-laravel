@@ -33,9 +33,11 @@ header{
 .navbar-toggler:not(:disabled):not(.disabled) {
     outline: none; /*remove dot around the element after click*/
 }
+.navbar-collapse {
+    position: fixed;
+}
 /* Icon 1 */
-
-.animated-icon1{
+.animated-icon1 {
     width: 30px;
     height: 20px;
     position: relative;
@@ -49,7 +51,7 @@ header{
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
-    }
+}
     
     .animated-icon1 span{
     display: block;

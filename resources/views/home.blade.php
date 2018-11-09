@@ -26,5 +26,7 @@
     </head>
     <body>
         @include('includes.nav')
+        @include('includes.video')
+        @include('includes.aboute_me')
     </body>
 </html>
