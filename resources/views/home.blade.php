@@ -45,5 +45,10 @@
         @include('includes.photos')
         <br>
         <br>
+        @include('includes.form')
+        <br>
+        <br>
+        <br>
+        <br>
     </body>
 </html>

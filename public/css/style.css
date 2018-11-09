@@ -246,3 +246,11 @@ h1 {
 .tour-btn {
     max-width: 19%;
 }
+
+/*-------------Form------------*/
+.form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #fff;
+}
+
