@@ -9,6 +9,12 @@ header{
     background: rgba(0, 0, 0, 0.5);
     border-bottom: 1px solid #fff;
 }
+footer{
+    background: rgba(0, 0, 0, 0.5);
+    border-top: 1px solid #fff;
+    color: #fff;
+    padding: 1.5em;
+}
 .main-title{
     width: 20em;
 }
@@ -16,15 +22,32 @@ header{
     width: 61%;
     text-align: right;
 }
+
+/* --------------input and form-------- */
+
+input.transparent-input{
+    background-color:transparent !important;
+    color: #fff;
+ }
+textarea.transparent-input{
+    background-color:transparent !important;
+    color: #fff;
+ }
 .form-control{
     background-color: transparent;
+    color: #fff;
 }
 .form-control::placeholder {
     color: white;
 }
+form .form-control:focus{
+    border-color: #fff;
+    box-shadow: none;
+    color: #fff;
+  }
 
 /*-----------Menu--------------*/
-.menu {
+/*.menu {
     background: rgba(0, 0, 0, 0.5);
     color: white;
     width: 10em;
@@ -38,11 +61,30 @@ header{
     color: #fff;
 }
 .navbar-toggler:not(:disabled):not(.disabled) {
-    outline: none; /*remove dot around the element after click*/
+    outline: none; remove dot around the element after click
 }
 .navbar-collapse {
     position: fixed;
 }
+*/
+
+.sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+body {
+  min-height: 1200px;
+}
+nav {
+  background: #eaebec;
+  min-height: 85px;
+}
+
 /* Icon 1 */
 .animated-icon1 {
     width: 30px;
