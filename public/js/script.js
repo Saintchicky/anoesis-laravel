@@ -9,6 +9,9 @@
     // $('.animated-icon1').toggleClass('open');
     
     // });
+    $('a[data-rel^=lightcase]').lightcase({
+        slideshowAutoStart:false,
+    });
         $('.navbar-nav>li>a').on('click', function () {
             $('.navbar-collapse').collapse('hide');
             // $('.animated-icon1').removeClass('open');
