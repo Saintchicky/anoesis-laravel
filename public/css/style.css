@@ -1,13 +1,22 @@
 section {
     width: 80%;
     margin: auto;
-    padding-top: 2.1rem;
-    padding-bottom: 2.1rem;
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
   
 }
 header{
     background: rgba(0, 0, 0, 0.5);
     border-bottom: 1px solid #fff;
+}
+.home{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+.home:hover {
+    color: #eaebec;
+    text-decoration: none;
 }
 footer{
     background: rgba(0, 0, 0, 0.5);
@@ -22,6 +31,7 @@ footer{
     width: 61%;
     text-align: right;
 }
+
 
 /* --------------input and form-------- */
 
@@ -45,7 +55,43 @@ form .form-control:focus{
     box-shadow: none;
     color: #fff;
   }
-
+/* --------------Mouse----------- */
+.scroll-downs {
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width :34px;
+    height: 55px;
+    cursor: pointer;
+  }
+  .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+  }
 /*-----------Menu--------------*/
 /*.menu {
     background: rgba(0, 0, 0, 0.5);
@@ -77,11 +123,10 @@ form .form-control:focus{
     width: 100%;
 }
 
-body {
-  min-height: 1200px;
-}
+
 nav {
   background: #eaebec;
+  /* background:  linear-gradient(to right, rgba(255,255,255,1), rgba(0,0,0,0.2)); */
   min-height: 85px;
 }
 
@@ -250,7 +295,7 @@ h1 {
 
 .block {
     background-image: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1));
-    padding:1em;
+    padding:2em;
     color:#fff;
 }
 /*--------------tour date-----------*/

@@ -9,10 +9,10 @@
     // $('.animated-icon1').toggleClass('open');
     
     // });
-        // $('.navbar-nav>li>a').on('click', function () {
-        //     $('.navbar-collapse').collapse('hide');
-        //     $('.animated-icon1').removeClass('open');
-        // });
+        $('.navbar-nav>li>a').on('click', function () {
+            $('.navbar-collapse').collapse('hide');
+            // $('.animated-icon1').removeClass('open');
+        });
 
     // ----------NAVBAR STICKY------------
           // Custom function which toggles between sticky class (is-sticky)

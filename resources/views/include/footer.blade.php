@@ -20,5 +20,3 @@
         </div>
 
 </footer>
-</body>
-</html>

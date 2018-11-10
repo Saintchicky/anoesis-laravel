@@ -1,13 +1,16 @@
-        @include('include.head')
+@extends('main')
+@section('content')      
         
         {{-- @include('sections.test_nav') --}}
-
-        @include('sections.header')
 
         @include('sections.video')
         <br>
         <br>
         @include('include.nav')
+        <span id="about_me"></span>
+        <br>
+        <br>
+        <br>
         <br>
         @include('sections.about_me')
         <br>
@@ -24,5 +27,4 @@
         @include('sections.form')
         <br>
         <br>
-        @include('include.footer')
-
+  @endsection

@@ -22,6 +22,5 @@
         
         <script src="{{asset('js/script.js')}}" type="text/javascript"></script>
 
-       
     </head>
-    <body>
+    

@@ -7,7 +7,7 @@
             <div class='row block'>
                 <div class='col-md-4 col-tab-4 band-members-single'>
                     <p>2018</p>
-                    <img src='http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg' alt='Band member' width='255px' height='255px' />
+                <a href="{{route('gallery')}}"><img src='http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg' alt='Band member' width='255px' height='255px' /></a>
                 </div>
                 <div class='col-md-4 col-tab-4 band-members-single'>
                     <p>2019</p>
@@ -19,5 +19,6 @@
                 </div>
             </div>            
         </div>
+        <span id="contact"></span>
     </div>
 </section>

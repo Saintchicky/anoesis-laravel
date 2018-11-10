@@ -17,5 +17,6 @@
                     <img class="img-fluid" src="{{asset('img/profile_pict.jpg')}}">
                 </div>
         </div>
+        <span id="dates"></span>
     </div>
 </section>

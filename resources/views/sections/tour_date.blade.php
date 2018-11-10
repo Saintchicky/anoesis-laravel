@@ -35,5 +35,6 @@
             <button type="button" class="btn tour-item tour-btn btn-primary">BUY TICKETES</button>
           </div>
         </div>
+        <span id="musics"></span>
     </div>
 </section>
