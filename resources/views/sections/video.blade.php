@@ -1,5 +1,5 @@
 <section>
-    <div class="container" style="width:80%;">
+    <div class="container video_resp">
         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="embed-responsive embed-responsive-16by9">

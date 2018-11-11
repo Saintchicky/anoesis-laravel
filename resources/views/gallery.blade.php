@@ -7,48 +7,44 @@
             <h2>PHOTOS</h2>
             <br>
             <br>
-                    <div class="row text-center text-lg-left block">
-                            <div class="col-lg-3 col-md-3 col-xs-6">
-                                <a href="http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg" title="test" data-lc-caption="test" class="d-block mb-4 h-100"  data-lc-options='{"maxWidth":1200, "maxHeight":800}'  data-rel="lightcase:myCollection:slideshow">
-                                    <div class="cont_img">
-                                        <img class="img-thumbnail" src="http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg" alt="">
-                                        {{-- <div class="overlay">
-                                            <div class="text">Yo test</div>
-                                        </div>   --}}
+                    <div class="row block">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="hovereffect">
+                                            <img class="img-responsive" src="http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg" alt="">
+                                            <div class="overlay">
+                                            <h3>Concert Bercy</h3>
+                                            <a class="info" href="http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg" title="test" data-lc-caption="test" class="d-block mb-4 h-100"  data-lc-options='{"maxWidth":1200, "maxHeight":800}'  data-rel="lightcase:myCollection:slideshow">Voir l'image</a>
+                                            </div>
                                     </div>
-                                </a>
                             </div>
-                            <div class="col-lg-3 col-md-3 col-xs-6">
-                                <a href="http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg" title="test" data-lc-caption="test" class="d-block mb-4 h-100"  data-lc-options='{"maxWidth":1200, "maxHeight":800}'  data-rel="lightcase:myCollection:slideshow">
-                                    <div class="cont_img">
-                                        <img class="img-thumbnail" src="http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg" alt="">
-                                        {{-- <div class="overlay">
-                                            <div class="text">Yo test</div>
-                                        </div>   --}}
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="hovereffect">
+                                            <img class="img-responsive" src="http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg" alt="">
+                                            <div class="overlay">
+                                            <h3>Concert Zénith</h3>
+                                            <a class="info" href="http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg" title="test" data-lc-caption="test" class="d-block mb-4 h-100"  data-lc-options='{"maxWidth":1200, "maxHeight":800}'  data-rel="lightcase:myCollection:slideshow">Voir l'image</a>
+                                            </div>
                                     </div>
-                                </a>
                             </div>
-                            <div class="col-lg-3 col-md-3 col-xs-6">
-                                <a href="http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg" title="test" data-lc-caption="test" class="d-block mb-4 h-100"  data-lc-options='{"maxWidth":1200, "maxHeight":800}'  data-rel="lightcase:myCollection:slideshow">
-                                    <div class="cont_img">
-                                        <img class="img-thumbnail" src="http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg" alt="">
-                                        {{-- <div class="overlay">
-                                            <div class="text">Yo test</div>
-                                        </div>   --}}
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="hovereffect">
+                                            <img class="img-responsive" src="http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg" alt="">
+                                            <div class="overlay">
+                                            <h3>Concert Chez Victor</h3>
+                                            <a class="info" href="http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg" title="test" data-lc-caption="test" class="d-block mb-4 h-100"  data-lc-options='{"maxWidth":1200, "maxHeight":800}'  data-rel="lightcase:myCollection:slideshow">Voir l'image</a>
+                                            </div>
                                     </div>
-                                </a>
                             </div>
-                            <div class="col-lg-3 col-md-3 col-xs-6">
-                                <a href="http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg" title="test" data-lc-caption="test" class="d-block mb-4 h-100"  data-lc-options='{"maxWidth":1200, "maxHeight":800}'  data-rel="lightcase:myCollection:slideshow">
-                                    <div class="cont_img">
-                                        <img class="img-thumbnail" src="http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg" alt="">
-                                        {{-- <div class="overlay">
-                                            <div class="text">Yo test</div>
-                                        </div>   --}}
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="hovereffect">
+                                            <img class="img-responsive" src="http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg" alt="">
+                                            <div class="overlay">
+                                            <h3>Concert Cool</h3>
+                                            <a class="info" href="http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg" title="test" data-lc-caption="test" class="d-block mb-4 h-100"  data-lc-options='{"maxWidth":1200, "maxHeight":800}'  data-rel="lightcase:myCollection:slideshow">Voir l'image</a>
+                                            </div>
                                     </div>
-                                </a>
                             </div>
-                            </div>    
+                             
                     </div>
             <br>
             <br>

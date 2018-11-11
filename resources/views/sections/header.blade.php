@@ -16,7 +16,7 @@
                 </div>
                 <div class="col-md-4 align-self-center">
                        
-                        <div class="social text-right">
+                        <div class="social text-right social_resp">
                                         <a class="home" href="{{route('home')}}">ACCUEIL</a>
                                 <ul class="social-network social-circle">
                                     {{-- <li><a href="#" class="icoRss" title="Rss"><i class="fas fa-rss"></i></a></li> --}}
