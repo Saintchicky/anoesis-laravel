@@ -10,10 +10,10 @@
                     <div class="row block">
                             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                                     <div class="hovereffect">
-                                            <img class="img-responsive" src="http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg" alt="">
+                                            <img class="img-responsive" src="https://i.ytimg.com/vi/WhFRN9H_YEQ/maxresdefault.jpg"  width='255px' height='255px' alt="">
                                             <div class="overlay">
                                             <h3>Concert Bercy</h3>
-                                            <a class="info" href="http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg" title="test" data-lc-caption="test" class="d-block mb-4 h-100"  data-lc-options='{"maxWidth":1200, "maxHeight":800}'  data-rel="lightcase:myCollection:slideshow">Voir l'image</a>
+                                            <a class="info" href="https://i.ytimg.com/vi/WhFRN9H_YEQ/maxresdefault.jpg" title="test" data-lc-caption="test" class="d-block mb-4 h-100"  data-lc-options='{"maxWidth":1200, "maxHeight":800}'  data-rel="lightcase:myCollection:slideshow">Voir l'image</a>
                                             </div>
                                     </div>
                             </div>

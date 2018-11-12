@@ -3,6 +3,7 @@
 <br>
 <br>
 <footer>
+<br>
         <div class="row text-center">
             <div class="col-md-4 align-self-center">
                 <p>ANOESIS TRIO : anoesistrio@gmail.com</p>
@@ -18,5 +19,5 @@
                 </p>
             </div>
         </div>
-
+<br>
 </footer>
