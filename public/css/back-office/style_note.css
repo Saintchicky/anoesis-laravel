@@ -1,0 +1,106 @@
+    /* .title_note,.p_note{
+      font-size:70%;
+      font-weight:normal;
+    } */
+    .main_note,.main_note_li{
+      list-style:none;
+    }
+    .main_note{
+      overflow:hidden;
+      display: flex;
+      flex-wrap: wrap;
+      /* height:100%; */
+      /* padding:3em; */
+    }
+    .main_note .main_note_li {
+      text-decoration:none;
+      color:#000;
+      background:#ffc;
+      display:block;
+      height:auto;
+      width:100%;
+      padding:1em;
+      -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+      -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+      box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+      -moz-transition:-moz-transform .15s linear;
+      -o-transition:-o-transform .15s linear;
+      -webkit-transition:-webkit-transform .15s linear;
+    }
+    .main_note .main_note_li{
+      margin:1em;
+      float:left;
+    }
+ 
+    .main_note .main_note_li p{
+          font-size:140%;
+    }
+    .main_note .main_note_li {
+      -webkit-transform: rotate(-2deg);
+      -o-transform: rotate(-2deg);
+      -moz-transform:rotate(-2deg);
+    }
+    .main_note .main_note_li:nth-child(even) {
+      -o-transform:rotate(1deg);
+      -webkit-transform:rotate(1deg);
+      -moz-transform:rotate(1deg);
+      position:relative;
+      top:5px;
+      background:#cfc;
+    }
+    .main_note .main_note_li:nth-child(3n) {
+      -o-transform:rotate(-1deg);
+      -webkit-transform:rotate(-1deg);
+      -moz-transform:rotate(-1deg);
+      position:relative;
+      top:-5px;
+      background:#ccf;
+    }
+    .main_note .main_note_li:nth-child(5n) {
+      -o-transform:rotate(2deg);
+      -webkit-transform:rotate(2deg);
+      -moz-transform:rotate(2deg);
+      position:relative;
+      top:-5px;
+    }
+    .main_note .main_note_li:hover,ul .main_note_li:focus{
+      box-shadow:10px 10px 7px rgba(0,0,0,.7);
+      -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+      -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -o-transform: scale(1);
+      position:relative;
+      z-index:5;
+    }
+    .main_note_li a{
+      text-decoration: none;
+    }
+.note_del:hover{
+  color: red;
+}
+.note_add:hover{
+  color: rgb(105, 240, 105);
+}
+.size_buttons{
+  font-size: 140%;
+}
+.opacity_black{
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height:100%;
+  position: fixed;
+  z-index: 10;
+  display: none;
+}
+.note_up{
+  position: absolute;
+  z-index: 11;
+  display: none;
+  width: 60%;
+  left: 22%;
+  overflow: hidden;
+  background-color: rgba(250,250,250,.9);
+  border-radius: 4px;
+  top: 37%;
+}

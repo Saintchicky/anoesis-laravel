@@ -1,11 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
+    "\\public\\css",
     "\\resources",
     "\\resources\\views",
-    "\\resources\\views\\includes"
+    "\\resources\\views\\back_office"
   ],
-  "SelectedNode": "\\resources\\views\\includes\\form.blade.php",
+  "SelectedNode": "\\resources\\views\\back_office\\include",
   "PreviewInSolutionExplorer": false
 }
