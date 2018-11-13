@@ -8,13 +8,15 @@ use App\ContactForm;
 use Mail;
 use Session;
 use Validator;
+use App\NewsLetter;
 
 class ContactController extends Controller
 {
      public function index()
     {
-        $bdd = ContactForm::where('email_NL')->get();
-  
-        return view('back_front.MessagesNewLetters.messages', compact('bdd'));
+        $bdd_NL= NewsLetter::all();
+        $bdd_m = ContactForm::all();
+
+        return view('back_front.MessagesNewLetters.messages', compact('bdd_NL','bdd_m'));
     }
 }
