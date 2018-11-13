@@ -13,7 +13,7 @@ class ContactController extends Controller
 {
      public function index()
     {
-        $bdd = ContactForm::where('email');
+        $bdd = ContactForm::where('email_NL')->get();
   
         return view('back_front.MessagesNewLetters.messages', compact('bdd'));
     }
