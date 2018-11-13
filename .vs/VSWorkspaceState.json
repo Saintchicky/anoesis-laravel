@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\public\\css",
-    "\\resources",
-    "\\resources\\views",
+    "\\public\\js",
     "\\resources\\views\\back_office"
   ],
-  "SelectedNode": "\\resources\\views\\back_office\\include",
   "PreviewInSolutionExplorer": false
 }
