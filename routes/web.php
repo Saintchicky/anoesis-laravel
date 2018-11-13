@@ -45,4 +45,14 @@ Auth::routes();
 /*---------------For Log into Back-office-----------*/
 Route::get('/back-office', 'HomeController@index')->name('home_view');
 
+/*-------Front Site Mode MAINTENANCE-------*/
+
+Route::get('/mode', function () {
+    return view('home');
+})->name('home_mode');
+
+/*NewsLetters et ContactForm*/
+
+Route::get('back-office/bdd','Admin\ContactController@index')->name('messages');
+
 });

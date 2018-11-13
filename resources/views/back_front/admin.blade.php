@@ -1,7 +1,7 @@
 @include('back_front.include.head')
 
         @include('back_front.include.menu')
-        @yield('content')         
+     
 
         <div class="loading">
                 <i class="fas fa-spinner fa-pulse"></i><br/>

@@ -7,7 +7,7 @@
           <ul class="nav sidebar-nav">
             <div class="sidebar-header">
             <div class="sidebar-brand">
-              <a href="{{route('home_view')}}">Atelier-Opa</a></div></div>
+              <a href="{{route('home_view')}}">Anoesis Back-office</a></div></div>
               <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
                 @guest
@@ -67,7 +67,7 @@
         <li><a href="{{route('mode_down')}}"><span class="fas fa-user-tie"></span> Maintenance On</a></li>
           <li><a href="{{route('mode_up')}}"><span class="fas fa-user-tie"></span> Maintenance Off</a></li>
             <div class="dropdown-header text-center">Gestion Formulaire</div>
-            <li><a href="{{url('admin/back-office/bdd')}}"><span class="fas fa-user-tie"></span> BDD Client</a></li>
+            <li><a href="{{route('messages')}}"><span class="fas fa-user-tie"></span> BDD</a></li>
    
             {{--<div class="dropdown-header text-center">Mes articles</div>
             <li><a href="{{route('posts_index')}}"><span class="fas fas fa-edit"></span> Rédaction Posts</a></li>
