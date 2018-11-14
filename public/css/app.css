@@ -5656,11 +5656,13 @@ input[type="button"].btn-block {
 }
 
 .alert {
-  position: relative;
-  padding: 0.75rem 1.25rem;
-  margin-bottom: 1rem;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    z-index: 22;
+    display: inline;
 }
 
 .alert-heading {
@@ -5712,9 +5714,9 @@ input[type="button"].btn-block {
 }
 
 .alert-success {
-  color: #1d643b;
-  background-color: #d7f3e3;
-  border-color: #c7eed8;
+    color: #155724;
+    background-color: #b1e9bf;
+    border-color: #c3e6cb;
 }
 
 .alert-success hr {

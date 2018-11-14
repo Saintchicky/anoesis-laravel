@@ -7,7 +7,7 @@ $(document).ready(function () {
         rootSelector: '[data-toggle=confirmation]',
         // other options
     });
-
+    $(".alert").fadeOut(3000);
         // -------------DropZone-----------
     Dropzone.options.dropzone =
         {
