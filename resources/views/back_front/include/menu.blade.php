@@ -69,14 +69,13 @@
             <div class="dropdown-header text-center">Gestion Formulaire</div>
             <li><a href="{{route('messages')}}"><span class="fas fa-user-tie"></span> BDD</a></li>
    
-            {{--<div class="dropdown-header text-center">Mes articles</div>
-            <li><a href="{{route('posts_index')}}"><span class="fas fas fa-edit"></span> Rédaction Posts</a></li>
+
             <div class="dropdown-header text-center">Gestion Site</div>
           
             <li><a href="{{route('profile_a')}}"><span class="fas fas fa-clone"></span> Création Profil</a></li>
-             <li><a href="{{route('services')}}"><span class="fas fas fa-clone"></span> Création Services</a></li>
+             {{-- <li><a href="{{route('services')}}"><span class="fas fas fa-clone"></span> Création Services</a></li>
             <li><a href="{{route('cat')}}"><span class="fas fas fa-clone"></span> Création Catégorie</a></li>
-            <li><a href="{{route('page')}}"><span class="fas fas fa-clone"></span> Création Page</a></li>--}}
+            <li><a href="{{route('page')}}"><span class="fas fas fa-clone"></span> Création Page</a></li> --}}
 
   
            </ul>

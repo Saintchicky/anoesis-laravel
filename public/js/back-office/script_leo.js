@@ -97,10 +97,6 @@ $('.summer').summernote('code');
 
     // ----------js table--------------
 
-   
-
-
-
         $('#data_table_NL').DataTable( {
           
         
@@ -280,7 +276,9 @@ $('.summer').summernote('code');
 
 
     // -------------------Ajax Profile---------------------
-
+    $('#reload_btn').click(function() {
+        location.reload();
+    });
 
 
     var str = window.location.pathname;

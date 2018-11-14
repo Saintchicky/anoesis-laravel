@@ -51,11 +51,19 @@ Route::get('/mode', function () {
     return view('home');
 })->name('home_mode');
 
-/*NewsLetters et ContactForm*/
+/*--------------NewsLetters et ContactForm----------*/
 
-Route::get('back-office/bdd','Admin\ContactController@index')->name('messages');
+Route::get('bdd','Admin\ContactController@index')->name('messages');
 
-Route::get('back-office/bdd/NL/{id}','Admin\ContactController@delete_NL')->name('delete_NL');
-Route::get('back-office/bdd/message/{id}','Admin\ContactController@delete_m')->name('delete_m');
+Route::get('/bdd/NL/{id}','Admin\ContactController@delete_NL')->name('delete_NL');
+Route::get('/bdd/message/{id}','Admin\ContactController@delete_m')->name('delete_m');
+
+// -------------------Create Profile-----------------
+Route::get('profile_edit','Admin\ProfileController@profileHome')->name('profile_a');
+Route::post('/profile_edit/store','Admin\ProfileController@profile_create')->name('profile_create');
+Route::get('/profile_edit/up/{id}','Admin\ProfileController@profileUp')->name('profile_up_a');
+Route::post('/profile_edit/up/store/{id?}','Admin\ProfileController@profile_a_up_store')->name('profile_a_up_store');
+Route::post('/profile_edit/up/pict/store/{id?}','Admin\ProfileController@profilePictUp')->name('profile_pict_up');
+Route::get('/profile_edit/delete/{id}','Admin\ProfileController@delete_profile')->name('profile_up_a_del');
 
 });

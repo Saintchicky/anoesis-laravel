@@ -1,17 +1,18 @@
-@extends('admin')
+@extends('back_front.admin')
 @section('content')
 <div class="title_page"><h1>Profil</h1></div>
+<section class="block">  
 <div class="container">
 
    <div class="col-lg-12">
 
-    @if(isset($profile))
-        <form action="{{route('profile_a_up',['id'=>$profile->id])}}" method="POST">
+    {{-- @if(isset($profile))
+        <form action="{{route('profile_a_up',['id'=>$profile->id])}}" method="POST"> --}}
             {{--enctype obligatoire pour pouvoir télécharger mon image--}}
-    @else
+    {{-- @else --}}
         <form method="post" action="{{route('profile_create')}}" enctype="multipart/form-data" 
         class="dropzone" id="dropzone">
-    @endif 
+    {{-- @endif  --}}
         @csrf
 
 
@@ -19,25 +20,29 @@
                         
                     
                    
-                    <textarea  id="description_p" type="text" class="form-control summernote" name="description_p" rows="10">{{$profile->description_p or old('description_p')}}</textarea>
+                    <textarea  id="description_p" type="text" class="form-control summernote" name="description_p" rows="10"></textarea>
         
                 </div> 
                 <div class="dz-message" data-dz-message><span>Glisser vos fichiers ici</span></div>
 
-            
+               
         </form>
-     <button class="btn btn-outline-primary float-right" id="reload_btn">Valider</button>
+        <br>
+        <button class="btn btn-outline-primary float-right" id="reload_btn">Valider</button>  
     </div>
-</div>       
-
+</div>    
+<br>   
+</section>
 
 <br>
 <br>
-<section>
+<section class="block">
     <div id="content">     
         @foreach ($profile_p as $profile )
         <div class="container">
-        <h3>A propos
+        <h2>ANOESIS</h2>
+       
+         <div class="d-flex justify-content-between">
         <span>
                 <div class="dropdown">
                         <button type="button" class="btn btn-outline-primary btn-sm dropdown-toggle" data-toggle="dropdown">
@@ -53,7 +58,7 @@
                                                 <input name="pict_profile" type="file" id="pict_profile"/>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="submit"  class="btn btn-outline-success">Sauvegarder</button>
+                                    <button class="btn btn-outline-success">Sauvegarder</button>
                                 </div>
                           </form>
                         </div>
@@ -63,7 +68,10 @@
         <span>
             <a href="{{route('profile_up_a_del',['id'=>$profile->id])}}" class="btn btn-outline-danger btn-sm" role="button">Supprimer</a>
         </span>
-    </h3>
+    </div>  
+    
+    <hr style="background:white;">
+    
         <br>
         <div class="row">
        
@@ -77,9 +85,9 @@
   
       </div>
       <div class="col-md-5">
-            <div class="card profile-card">
+            <div>
           <figure>
-      <img class="img-fluid img-profile" src="{{asset('storage/profile/'.$profile->pict_profile)}}" alt="">
+      <img class="img-fluid" src="{{asset('storage/profile/'.$profile->pict_profile)}}" alt="">
 
     </figure>
             </div>
