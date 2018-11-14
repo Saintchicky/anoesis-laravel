@@ -26,6 +26,13 @@ td[colspan="3"] {
 }
  */
 
+
+.block {
+    background-image: linear-gradient(to left, rgba(0,0,0,0.6), rgba(0,0,0,8));
+    padding: 2em;
+    color: #fff;
+}
+
 /* --------------Switch mode maintenance--------- */
 
 .switch input { 

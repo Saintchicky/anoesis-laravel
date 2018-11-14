@@ -6,6 +6,6 @@
     "\\app\\Http\\Controllers",
     "\\app\\Http\\Controllers\\Admin"
   ],
-  "SelectedNode": "\\.env.example",
+  "SelectedNode": "\\.env",
   "PreviewInSolutionExplorer": false
 }

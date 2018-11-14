@@ -55,4 +55,7 @@ Route::get('/mode', function () {
 
 Route::get('back-office/bdd','Admin\ContactController@index')->name('messages');
 
+Route::get('back-office/bdd/NL/{id}','Admin\ContactController@delete_NL')->name('delete_NL');
+Route::get('back-office/bdd/message/{id}','Admin\ContactController@delete_m')->name('delete_m');
+
 });
