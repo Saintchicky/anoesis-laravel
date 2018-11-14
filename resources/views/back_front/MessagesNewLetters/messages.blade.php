@@ -86,7 +86,15 @@
                 <td>{{$message->email}}</td>
                 <td>{{$message->message}}</td>
                 <td>{{ \Carbon\Carbon::parse($message->created_at)->format('d/m/Y')}}</td>
-                <td><a class="btn btn-outline-danger btn-sm" href="{{route ('delete_m', $message->id) }}" role="button">Supprimer</a></td>
+                <td><a class="btn btn-outline-light btn-sm"
+                data-toggle="confirmation"
+                data-title="Souhaitez-vous supprimer ?"
+                data-btn-ok-label="Oui"
+                data-btn-ok-class="btn-danger"
+                data-btn-cancel-label="Non"
+                data-btn-ok-class="btn-primary"
+                data-placement="right"
+                href="{{route ('delete_m', $message->id) }}">Supprimer</a></td>
 
             </tr>
             @endforeach
