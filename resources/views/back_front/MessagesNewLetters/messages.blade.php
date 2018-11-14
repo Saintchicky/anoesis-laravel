@@ -39,24 +39,15 @@
                 <th scope="row">{{$new_l->id}}</th>
                 <td>{{$new_l->email_NL}}</td>
                 <td>{{ \Carbon\Carbon::parse($new_l->created_at)->format('d/m/Y')}}</td>
-                <td><a class="btn btn-outline-danger btn-sm" href="{{route ('delete_NL', $new_l->id) }}"
-                           data-tr="tr_{{$new_l->id}}"
-
-                           data-toggle="confirmation"
-
-                           data-btn-ok-label="Delete" data-btn-ok-icon="fas fa-remove"
-
-                           data-btn-ok-class="btn btn-sm btn-danger"
-
-                           data-btn-cancel-label="Cancel"
-
-                           data-btn-cancel-icon="fas fa-chevron-circle-left"
-
-                           data-btn-cancel-class="btn btn-sm btn-default"
-
-                           data-title="Souhaitez-vous supprimer ?"
-
-                           data-placement="left" data-singleton="true">Supprimer</a></td>
+                <td><a class="btn btn-outline-light btn-sm"
+                data-toggle="confirmation"
+                data-title="Souhaitez-vous supprimer ?"
+                data-btn-ok-label="Oui"
+                data-btn-ok-class="btn-danger"
+                data-btn-cancel-label="Non"
+                data-btn-ok-class="btn-primary"
+                data-placement="right"
+                href="{{route ('delete_NL', $new_l->id) }}">Supprimer</a></td>
             </tr>
             @endforeach
             
