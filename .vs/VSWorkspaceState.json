@@ -4,8 +4,12 @@
     "\\app",
     "\\app\\Http",
     "\\app\\Http\\Controllers",
-    "\\app\\Http\\Controllers\\Admin"
+    "\\app\\Http\\Controllers\\Admin",
+    "\\resources\\views",
+    "\\resources\\views\\back_front",
+    "\\resources\\views\\sections",
+    "\\routes"
   ],
-  "SelectedNode": "\\.env",
+  "SelectedNode": "\\app\\Http\\Controllers\\Admin\\DateTourController.php",
   "PreviewInSolutionExplorer": false
 }

@@ -73,8 +73,8 @@
             <div class="dropdown-header text-center">Gestion Site</div>
           
             <li><a href="{{route('profile_a')}}"><span class="fas fas fa-clone"></span> Création Profil</a></li>
-             {{-- <li><a href="{{route('services')}}"><span class="fas fas fa-clone"></span> Création Services</a></li>
-            <li><a href="{{route('cat')}}"><span class="fas fas fa-clone"></span> Création Catégorie</a></li>
+            <li><a href="{{route('dates')}}"><span class="fas fas fa-clone"></span> Création Date</a></li>
+            {{--  <li><a href="{{route('cat')}}"><span class="fas fas fa-clone"></span> Création Catégorie</a></li>
             <li><a href="{{route('page')}}"><span class="fas fas fa-clone"></span> Création Page</a></li> --}}
 
   

@@ -66,4 +66,8 @@ Route::post('/profile_edit/up/store/{id?}','Admin\ProfileController@profile_a_up
 Route::post('/profile_edit/up/pict/store/{id?}','Admin\ProfileController@profilePictUp')->name('profile_pict_up');
 Route::get('/profile_edit/delete/{id}','Admin\ProfileController@delete_profile')->name('profile_up_a_del');
 
+// -----------------DateTour------------------------
+Route::get('tour_date','Admin\DateTourController@index')->name('dates');
+Route::post('tour_date/store','Admin\DateTourController@store')->name('date_create');
+
 });

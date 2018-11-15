@@ -15,7 +15,7 @@ class CreateTourDatesTable extends Migration
     {
         Schema::create('tour_dates', function (Blueprint $table) {
             $table->increments('id');
-            $table->date('date');
+            $table->string('date',100)->nullable;
             $table->string('city',100)->nullable;
             $table->string('place',100)->nullable;
             $table->string('url')->nullable;

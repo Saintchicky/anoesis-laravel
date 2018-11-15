@@ -33,6 +33,12 @@ td[colspan="3"] {
     color: #fff;
 }
 
+/*---------------DropZone-----------*/
+
+.dz-message{
+    color:black;
+}
+
 /* --------------Switch mode maintenance--------- */
 
 .switch input { 
@@ -678,3 +684,71 @@ td.highlight {
 
 
 /* End of carousel Posts */
+
+/*--------------tour date-----------*/
+
+.content-section {
+    color: #fff;
+}
+
+.tour-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+    .tour-row:last-child {
+        border-bottom: none;
+    }
+
+.tour-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date {
+    font-weight: bold;
+    width: 11%;
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.tour-btn {
+    max-width: 19%;
+}
+
+@media (max-width: 768px) {
+    .tour-row {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tour-item {
+        display: inline-block;
+        padding-right: 0;
+    }
+
+    .tour-date {
+        width: 100%;
+    }
+
+    .tour-city {
+        width: 100%;
+    }
+
+    .tour-arena {
+        width: 100%;
+        font-weight: bold;
+    }
+
+    .tour-btn {
+        max-width: 100%;
+    }
+}
