@@ -25,4 +25,41 @@ class DateTourController extends Controller
         return Redirect::back();
     }
 
+    public function up(Request $request)
+    {
+        if ($request->isMethod('get')){
+            $datesTour= TourDates::all();
+        
+        }
+
+        return view('back_front.SiteManage.modif_date',compact('datesTour'));   
+    }
+
+    public function upStore(Request $request){
+
+        $mode_update = false;
+           if(is_numeric($request->id)){
+               $mode_update = true;
+           }
+           if($mode_update){
+     
+            $datesTour = TourDates::find($request->id);
+               
+           }else{
+            $datesTour = new TourDates();
+           }
+            $datesTour->fill($request->all());
+            $datesTour->save();
+   
+           return redirect()->route('dates');
+       }
+
+       public function delete(Request $request)
+       {
+           $datesTour = TourDates::find($request->id);
+           $datesTour->delete(); 
+           return redirect()->route('dates');      
+       }
+
+
 }

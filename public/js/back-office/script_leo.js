@@ -179,9 +179,6 @@ $('.summer').summernote('code');
     });
 
        
-
-    
-
     // -----------------token ----------------------
 
     $.ajaxSetup({
@@ -192,85 +189,7 @@ $('.summer').summernote('code');
 
 
 
-    //--------------------Ajax Category Title----------
-
-
-
-    var str = window.location.pathname;
-    if (str.startsWith("/admin/category_edit")) {
-
-        $('.btn_cat').on('click', function (event) {
-            event.preventDefault();
-            ajaxLoad($(this).attr('href'));
-
-           
-        });
-        
-        
-    function ajaxLoad(filename) {
-
-        $.ajax({
-            type: "GET",
-            url: filename,
-            contentType: false,
-            success: function (data) {
- 
-                    $("#content").html(data);
-           
-
     
-            $('#sendToDB').click(function(e){
-                var form = $('form#frm');
-                var data = {
-            
-                    titre_cat: $("#titre_cat_t").val(),
-                  
-                };
-       
-                var url = form.attr("action");
-    
-                console.log(form,data, url);
-        
-                $.ajax({
-                    type: form.attr('method'),
-                    url: url,
-                    data: data,
-                    cache: false,
-                    success: function (data) {
-                        $('.is-invalid').removeClass('is-invalid');
-                        
-                        if (data.fail) {
-                            for (control in data.errors) {
-                                $('input[name=' + control + ']').addClass('is-invalid');
-                                $('#error-' + control).html(data.errors[control]);
-                            }
-                        } else {
-                            document.location.reload();
-                            // console.log(data);
-                          
-                        
-                       }
-                    },
-                    error: function (xhr, textStatus, errorThrown) {
-                        console.log("Error: " + errorThrown + xhr + textStatus );
-                        console.log( xhr  );
-                    }
-                });
-                return false;
-    
-            });
-    
-            },
-            error: function (xhr, status, error) {
-                alert(xhr.responseText);
-            }
-        });
-    }
-    
-  
-    
- 
-    }
 
    
 
@@ -357,6 +276,173 @@ $('.summer').summernote('code');
  
     }
 
+//-----------------Ajax Services--------------------
+
+
+
+var str = window.location.pathname;
+if (str.startsWith("/admin/tour_date")) {
+
+    $('#ajaxDatetour').on('click', function (event) {
+       
+        event.preventDefault();
+        ajaxLoad($(this).attr('href'));
+      
+           
+      
+
+    });
+     
+    
+function ajaxLoad(filename) {
+
+    $.ajax({
+        type: "GET",
+        url: filename,
+        contentType: false,
+        success: function (data) {
+            // $("#" + content).html(data);
+            $("#content").html(data);
+
+
+
+          
+
+        $('#sendToDB').click(function(e){
+            var form = $('form#frm');
+            var data = {
+                date: $("#date_d").val(),
+                city: $("#city_d").val(),
+                place: $("#place_d").val(),
+                url: $("#url_d").val()       
+            };
+   
+            var url = form.attr("action");
+
+            console.log(form,data, url);
+    
+            $.ajax({
+                type: form.attr('method'),
+                url: url,
+                data: data,
+                cache: false,
+                success: function (data) {
+
+                    
+                    if (data.fail) {
+                        for (control in data.errors) {
+                          
+                            $('#error-' + control).html(data.errors[control]);
+                        }
+                    } else {
+                        document.location.reload();
+
+                      
+                    
+                   }
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    console.log("Error: " + errorThrown + xhr + textStatus );
+                    console.log( xhr  );
+                }
+            });
+            return false;
+
+        });
+
+        },
+        error: function (xhr, status, error) {
+            alert(xhr.responseText);
+        }
+    });
+}
+
+
+
+
+}
+//-----------------Ajax Musics--------------------
+
+
+
+var str = window.location.pathname;
+if (str.startsWith("/admin/music")) {
+
+    $('#ajaxMusic').on('click', function (event) {
+       
+        event.preventDefault();
+        ajaxLoad($(this).attr('href'));
+      
+           
+      
+
+    });
+     
+    
+function ajaxLoad(filename) {
+
+    $.ajax({
+        type: "GET",
+        url: filename,
+        contentType: false,
+        success: function (data) {
+            // $("#" + content).html(data);
+            $("#content").html(data);
+
+
+
+          
+
+        $('#sendToDB').click(function(e){
+            var form = $('form#frm');
+            var data = {
+                url_sound: $("#url_sound_a").val()       
+            };
+   
+            var url = form.attr("action");
+
+            console.log(form,data, url);
+    
+            $.ajax({
+                type: form.attr('method'),
+                url: url,
+                data: data,
+                cache: false,
+                success: function (data) {
+
+                    
+                    if (data.fail) {
+                        for (control in data.errors) {
+                          
+                            $('#error-' + control).html(data.errors[control]);
+                        }
+                    } else {
+                        document.location.reload();
+
+                      
+                    
+                   }
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    console.log("Error: " + errorThrown + xhr + textStatus );
+                    console.log( xhr  );
+                }
+            });
+            return false;
+
+        });
+
+        },
+        error: function (xhr, status, error) {
+            alert(xhr.responseText);
+        }
+    });
+}
+
+
+
+
+}
 
  
 

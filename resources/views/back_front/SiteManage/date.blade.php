@@ -3,7 +3,7 @@
 
 
 
-<div class="title_page" id="Up"><h1>Dates</h1></div>
+<div class="title_page" id="Up"><h1>DATES</h1></div>
 
 <section class="block">
        
@@ -15,7 +15,7 @@
                                 <div>
                                     <div class="container">
                                                     <h3 class="display-8">1. Créer les dates</h3>
-                                                    <div id="content">
+                                     
                                         <table class="table">
                                             <thead>
                                             <tr>
@@ -33,7 +33,7 @@
                                                         @csrf
                                                             <td>                                                       
                                                                        <div class="input-group">                                             
-                                                                               <input class="form-control" type="text" id="date" name="date">    
+                                                                               <input class="form-control" type="date" id="date" name="date">    
                                                                        </div>
                                                             </td>
                                                               <td>                                                       
@@ -61,7 +61,7 @@
               
                                             </tbody>
                                         </table>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                         </div>
@@ -70,22 +70,26 @@
 </section>
 
 
-        <h2 class="text-center"><a href="#" id="ajaxService" type="button" class="btn btn-outline-info">Modifier</a>LES DATES</h2>
+        
         <br>
         <section class="block">
+        <div id="content">
+        <h2 class="text-center">LES DATES <a href="{{route('date_modif')}}" id="ajaxDatetour" type="button" class="btn btn-outline-info">Modifier</a></h2>
+        <br>
+        
         @foreach($datesTour as $dates)
          <div class="tour-row">
-            <span class="tour-item tour-date">{{$dates->date}}</span>
+            <span class="tour-item tour-date">{{ strtoupper(\Carbon\Carbon::parse($dates->date)->format('d M y'))}}</span>            
+            {{-- The strtoupper() function converts all the characters in a string to uppercase. --}}
             <span class="tour-item tour-city">{{$dates->city}}</span>
             <span class="tour-item tour-arena">{{$dates->place}}</span>
             <a class="btn btn-outline-light my-2 my-sm-0" href="http://{{$dates->url}}" type="button" target="_blank">Voir l'évent</a> 
           </div>
         @endforeach  
+        </div>
         </section>
-   
 
 
-    
 <br>
 <br>
 

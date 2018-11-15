@@ -69,5 +69,18 @@ Route::get('/profile_edit/delete/{id}','Admin\ProfileController@delete_profile')
 // -----------------DateTour------------------------
 Route::get('tour_date','Admin\DateTourController@index')->name('dates');
 Route::post('tour_date/store','Admin\DateTourController@store')->name('date_create');
+Route::get('tour_date/up','Admin\DateTourController@up')->name('date_modif');
+Route::post('tour_date/up/{id?}','Admin\DateTourController@upStore')->name('date_create_up_store');
+Route::get('tour_date/delete/{id}','Admin\DateTourController@delete')->name('delete_date');
+
+// -----------------Music--------------------------
+
+Route::get('music','Admin\MusicController@index')->name('musics');
+Route::post('music/store','Admin\MusicController@store')->name('music_create');
+Route::get('music/up','Admin\MusicController@up')->name('music_modif');
+Route::post('music/up/{id?}','Admin\MusicController@upStore')->name('music_create_up_store');
+Route::get('music/delete/{id}','Admin\MusicController@delete')->name('delete_music');
+
+
 
 });

@@ -74,6 +74,7 @@
           
             <li><a href="{{route('profile_a')}}"><span class="fas fas fa-clone"></span> Création Profil</a></li>
             <li><a href="{{route('dates')}}"><span class="fas fas fa-clone"></span> Création Date</a></li>
+            <li><a href="{{route('musics')}}"><span class="fas fas fa-clone"></span> Création Musique</a></li>
             {{--  <li><a href="{{route('cat')}}"><span class="fas fas fa-clone"></span> Création Catégorie</a></li>
             <li><a href="{{route('page')}}"><span class="fas fas fa-clone"></span> Création Page</a></li> --}}
 
