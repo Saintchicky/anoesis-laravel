@@ -308,16 +308,17 @@ function ajaxLoad(filename) {
 
           
 
-            $(document).on('click',function (e) {
+            $(document).on('click', 'button[data-id]', function (e) {
 
             let id = $(this).data('id');
 
             var form = $('form#frm');
             var data = {
-                date: $("#date_d").val(),
-                city: $("#city_d").val(),
-                place: $("#place_d").val(),
-                url: $("#url_d").val()       
+  
+                date: $('#date_d[data-id="'+ id +'"]').val(),
+                city: $('#city_d[data-id="' + id +'"]').val(),
+                place: $('#place_d[data-id="' + id +'"]').val(),
+                url: $('#url_d[data-id="' + id +'"]').val()       
             };
    
                 var url = "/admin/tour_date/up/"+ id;
@@ -339,7 +340,8 @@ function ajaxLoad(filename) {
                         }
                     } else {
                         document.location.reload();
-                   
+        
+
                       
                     
                    }
@@ -396,10 +398,12 @@ function ajaxLoad(filename) {
 
           
 
-        $('#sendToDB').click(function(e){
+         $(document).on('click', 'button[data-idm]', function (e) {
+
+            let id = $(this).data('idm');
             var form = $('form#frm');
             var data = {
-                url_sound: $("#url_sound_a").val()       
+                url_sound: $('#url_sound_a[data-idm="'+ id +'"]').val()       
             };
    
             var url = form.attr("action");
@@ -420,8 +424,8 @@ function ajaxLoad(filename) {
                             $('#error-' + control).html(data.errors[control]);
                         }
                     } else {
-                        document.location.reload();
-
+                       document.location.reload();
+                        console.log(data);
                       
                     
                    }
