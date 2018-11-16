@@ -26,7 +26,7 @@
                         <td>                                                       
                                  
                                             <button type="submit" class="btn btn-outline-success btn-sm" data-id="{{ $music->id }}">Sauvegarder</button>
-                                            <span> <a  class="btn btn-outline-danger btn-sm" href="{{route('delete_date',['id'=>$music->id])}}" type="button">Supprimer</a></span>
+                                            <span> <a  class="btn btn-outline-danger btn-sm" href="{{route('delete_music',['id'=>$music->id])}}" type="button">Supprimer</a></span>
                              
                         </td>
             </form>   
