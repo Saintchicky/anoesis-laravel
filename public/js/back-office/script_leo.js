@@ -276,7 +276,7 @@ $('.summer').summernote('code');
  
     }
 
-//-----------------Ajax Services--------------------
+//-----------------Ajax TOUR DATE--------------------
 
 
 
@@ -398,15 +398,15 @@ function ajaxLoad(filename) {
 
           
 
-         $(document).on('click', 'button[data-idm]', function (e) {
+         $(document).on('click', 'button[data-id]', function (e) {
 
-            let id = $(this).data('idm');
+            let id = $(this).data('id');
             var form = $('form#frm');
             var data = {
-                url_sound: $('#url_sound_a[data-idm="'+ id +'"]').val()       
+                url_sound: $('#url_sound[data-id="'+ id +'"]').val()       
             };
    
-            var url = form.attr("action");
+             var url = "/admin/music/up/" + id;
 
             console.log(form,data, url);
     
@@ -425,8 +425,7 @@ function ajaxLoad(filename) {
                         }
                     } else {
                        document.location.reload();
-                        console.log(data);
-                      
+                        
                     
                    }
                 },

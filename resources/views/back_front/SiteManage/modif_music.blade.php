@@ -20,12 +20,12 @@
                      
                         <td>                                                       
                                    <div class="input-group">                                             
-                                           <input class="form-control" type="text" id="url_sound_a" name="url_sound" value="{{ old('url_sound', $music->url_sound)}}" data-idm="{{ $music->id }}">    
+                                           <input class="form-control" type="text" id="url_sound" name="url_sound" value="{{ old('url_sound', $music->url_sound)}}" data-id="{{ $music->id }}">    
                                    </div>
                         </td>
                         <td>                                                       
                                  
-                                            <button type="submit" class="btn btn-outline-success btn-sm" data-idm ="{{ $music->id }}">Sauvegarder</button>
+                                            <button type="submit" class="btn btn-outline-success btn-sm" data-id="{{ $music->id }}">Sauvegarder</button>
                                             <span> <a  class="btn btn-outline-danger btn-sm" href="{{route('delete_date',['id'=>$music->id])}}" type="button">Supprimer</a></span>
                              
                         </td>

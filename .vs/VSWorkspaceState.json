@@ -2,17 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\app\\Http\\Controllers\\Admin",
     "\\public",
     "\\public\\css",
-    "\\public\\css\\back-office",
+    "\\public\\js",
+    "\\public\\js\\back-office",
     "\\resources",
     "\\resources\\views",
     "\\resources\\views\\back_front",
-    "\\resources\\views\\back_front\\include",
-    "\\resources\\views\\back_front\\MessagesNewLetters",
     "\\resources\\views\\back_front\\SiteManage"
   ],
-  "SelectedNode": "\\public\\css\\back-office\\style_back.css",
+  "SelectedNode": "\\resources\\views\\back_front\\SiteManage\\modif_music.blade.php",
   "PreviewInSolutionExplorer": false
 }
