@@ -331,7 +331,7 @@ h2 {
 /* -------------background block -------- */
 
 .block {
-    background-image: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1));
+    background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,6));
     padding:2em;
     color:#fff;
 }
@@ -341,7 +341,7 @@ h2 {
     color:#fff;
 }
 .tour-row {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     padding-bottom: 1em;
     margin-bottom: 1em;
 }

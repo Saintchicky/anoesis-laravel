@@ -79,7 +79,7 @@
         
         @foreach($datesTour as $dates)
          <div class="tour-row">
-            <span class="tour-item tour-date">{{ strtoupper(\Carbon\Carbon::parse($dates->date)->format('d M y'))}}</span>            
+            <span class="tour-item tour-date">{{ strtoupper(\Carbon\Carbon::parse($dates->date)->format('d M Y'))}}</span>            
             {{-- The strtoupper() function converts all the characters in a string to uppercase. --}}
             <span class="tour-item tour-city">{{$dates->city}}</span>
             <span class="tour-item tour-arena">{{$dates->place}}</span>

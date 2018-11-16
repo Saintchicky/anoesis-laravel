@@ -2,6 +2,7 @@
     <h1>DATES</h1>
     <br>
     <br>
+    {{-- put a function who don't show last months --}}
     <div class="container">
         <div  class="block">
           <div class="tour-row">
