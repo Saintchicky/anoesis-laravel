@@ -19,7 +19,7 @@
 
         <tr>
              <form id="frm" action="{{route('date_create_up_store',['id'=>$dates->id])}}"  class="form-inline" method="POST">
-                    @csrf
+                 
                         <td>                                                       
                                    <div class="input-group">                                             
                                            <input class="form-control" type="date" id="date_d" name="date" value="{{ old('date', $dates->date)}}">    
@@ -41,8 +41,9 @@
                                    </div>
                         </td>
                         <td>                                                       
-                                 
-                                            <button type="submit" class="btn btn-outline-success btn-sm" id="sendToDB">Sauvegarder</button>
+                                
+                                            <button type="submit" class="btn btn-outline-success btn-sm"  data-id="{{ $dates->id }}" id="ajaxVote">Sauvegarder</button>
+                                
                                             <span> <a  class="btn btn-outline-danger btn-sm" href="{{route('delete_date',['id'=>$dates->id])}}" type="button">Supprimer</a></span>
                              
                         </td>
@@ -56,4 +57,3 @@
 
 
     
-                                              

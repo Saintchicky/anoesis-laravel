@@ -308,7 +308,10 @@ function ajaxLoad(filename) {
 
           
 
-        $('#sendToDB').click(function(e){
+            $(document).on('click',function (e) {
+
+            let id = $(this).data('id');
+
             var form = $('form#frm');
             var data = {
                 date: $("#date_d").val(),
@@ -317,7 +320,7 @@ function ajaxLoad(filename) {
                 url: $("#url_d").val()       
             };
    
-            var url = form.attr("action");
+                var url = "/admin/tour_date/up/"+ id;
 
             console.log(form,data, url);
     
@@ -336,7 +339,7 @@ function ajaxLoad(filename) {
                         }
                     } else {
                         document.location.reload();
-
+                   
                       
                     
                    }

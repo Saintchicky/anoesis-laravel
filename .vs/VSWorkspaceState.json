@@ -2,14 +2,17 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\app\\Http",
-    "\\app\\Http\\Controllers",
     "\\app\\Http\\Controllers\\Admin",
+    "\\public",
+    "\\public\\css",
+    "\\public\\css\\back-office",
+    "\\resources",
     "\\resources\\views",
     "\\resources\\views\\back_front",
-    "\\resources\\views\\sections",
-    "\\routes"
+    "\\resources\\views\\back_front\\include",
+    "\\resources\\views\\back_front\\MessagesNewLetters",
+    "\\resources\\views\\back_front\\SiteManage"
   ],
-  "SelectedNode": "\\app\\Http\\Controllers\\Admin\\DateTourController.php",
+  "SelectedNode": "\\public\\css\\back-office\\style_back.css",
   "PreviewInSolutionExplorer": false
 }
