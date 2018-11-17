@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\Redirect;
 
 class DateTourController extends Controller
 {
+     public function __construct()
+    {
+        $this->middleware('auth');
+    }
          public function index(Request $request)
     {
         $datesTour = TourDates::all();

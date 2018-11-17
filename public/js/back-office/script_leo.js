@@ -450,6 +450,83 @@ function ajaxLoad(filename) {
 
 }
 
+    //-----------------Ajax Musics--------------------
+
+
+
+    var str = window.location.pathname;
+    if (str.startsWith("/admin/year")) {
+
+        $('#ajaxYear').on('click', function (event) {
+
+            event.preventDefault();
+            ajaxLoad($(this).attr('href'));
+
+        });
+
+
+        function ajaxLoad(filename) {
+
+            $.ajax({
+                type: "GET",
+                url: filename,
+                contentType: false,
+                success: function (data) {
+                    // $("#" + content).html(data);
+                    $("#content").html(data);
+
+                    $(document).on('click', 'button[data-id]', function (e) {
+
+                        let id = $(this).data('id');
+                        var form = $('form#frm');
+                        var data = {
+                            year_album: $('#year_album_p[data-id="' + id + '"]').val()
+                        };
+
+                        var url = "/admin/year/up/" + id;
+
+                        console.log(form, data, url);
+
+                        $.ajax({
+                            type: form.attr('method'),
+                            url: url,
+                            data: data,
+                            cache: false,
+                            success: function (data) {
+
+
+                                if (data.fail) {
+                                    for (control in data.errors) {
+
+                                        $('#error-' + control).html(data.errors[control]);
+                                    }
+                                } else {
+                                    document.location.reload();
+
+
+                                }
+                            },
+                            error: function (xhr, textStatus, errorThrown) {
+                                console.log("Error: " + errorThrown + xhr + textStatus);
+                                console.log(xhr);
+                            }
+                        });
+                        return false;
+
+                    });
+
+                },
+                error: function (xhr, status, error) {
+                    alert(xhr.responseText);
+                }
+            });
+        }
+
+
+
+
+    }
+
  
 
 // --------------------Move pict-------------------
