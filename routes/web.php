@@ -87,7 +87,11 @@ Route::get('year/up','Admin\YearController@up')->name('year_modif');
 Route::post('year/up/{id?}','Admin\YearController@upStore')->name('year_create_up_store');
 Route::get('year/delete/{id}','Admin\YearController@delete')->name('delete_year');
 
- Route::get('/gallery/{id}','Admin\YearController@viewByGallery')->name('gallery_edit');
+ Route::get('gallery/{id}','Admin\YearController@viewByGallery')->name('gallery_edit');
 
+// ------------------Album--------------------------
+
+Route::post('gallery/store','Admin\GalleryController@store')->name('gal_create');
+Route::post('gallery/update_order','Admin\GalleryController@updateOrder')->name('update_order');
 
 });

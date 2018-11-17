@@ -50,7 +50,7 @@
                                             </a>
                                 </th>
      
-                                    <th scope="col">Galerie Photos | | Vidéos</th>
+                                    <th scope="col">Album Photos | | Vidéos</th>
                                     <th scope="col">Action</th>
 
                                 </tr>

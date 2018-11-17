@@ -62,7 +62,7 @@ class YearController extends Controller
     public function viewByGallery(Request $request) {
         $id_year = $request->id;
         $year = Year::find($id_year);
-        $gallery = Gallery::where('id_year',$id_year)->get();
+        $gallery = Gallery::where('id_year',$id_year)->orderBy('order','ASC')->get();
         $years = Year::find($request->id);
        ;
         return view('back_front.SiteManage.see_gallery',compact('gallery','years'));

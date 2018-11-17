@@ -567,6 +567,11 @@ function ajaxLoad(filename) {
 
     }
 
+        $('#reload_btn_pict').click(function() {
+        location.reload();
+    });
+
+
 
     // ----------------Ajax Gallery---------------------
     var str = window.location.pathname;

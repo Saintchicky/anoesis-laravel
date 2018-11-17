@@ -1,33 +1,26 @@
-@extends('admin')
+@extends('back_front.admin')
 @section('content')
 
-    <div class="title_page"><h1>Carousel et Galerie</h1></div>
-<div class="container">
+<div class="title_page"><h1>Album Photos | | Vidéos</h1></div>
 
-   
-    <div class="jumbotron jumbotron-fluid">
-       
-            <div class="container">
-            
-           <br>
-                <form method="post" action="{{url('/admin/image/upload/store')}}" enctype="multipart/form-data" 
-                            class="dropzone" id="dropzone">
-                                    <input type="hidden" name="id_page"  id="id_page" value="{{$pages->id}}">
-                                    <input type="hidden" name="id_cat"  id="id_cat" value=" @if($pages->Category){{$pages->Category->id}}@endif">
-                                    <div class="dz-message" data-dz-message><span>Glisser vos fichiers ici</span></div>
-                    
-                @csrf
-            
-                </form>
-                    <button class="btn btn-outline-success float-right" id="reload_btn">Valider</button>
+
+<section class="block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+               <br>
+                    <form method="post" action="{{route('gal_create')}}" enctype="multipart/form-data" class="dropzone" id="dropzone">
+                        @csrf
+                        <input type="hidden" name="id_year"  id="id_year" value="{{$years->id}}">
+                        <div class="dz-message" data-dz-message><span>Glisser vos fichiers ici</span></div>
+                    </form>
+                        <button class="btn btn-outline-success float-right" id="reload_btn">Valider</button>
             </div>
+        </div>
+         @include('back_front.SiteManage.gallery_pict')
     </div>
-     <br>
-      @include('back_front.SiteManage.carousel')
-     <br>
-     @include('back_front.SiteManage.gallery_pict')
-</div>
-
+<section>
+<!--
 <div class="container">
             <h1>Galerie</h1>
             <hr>
@@ -79,5 +72,5 @@
             <div class="modal-content" id="modal_content"></div>
         </div>
     </div>
-
+    -->
 @endsection
