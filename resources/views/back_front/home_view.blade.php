@@ -2,7 +2,7 @@
 @section('content')
 
 
-<p> ceci est l'accueil</p>
+<div class="title_page"><h1>Bienvenue dans le back-office !!!</h1></div>
 
 {{-- <div class="title_page"><h1>HOME</h1></div>
 <br>

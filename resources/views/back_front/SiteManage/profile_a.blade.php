@@ -1,18 +1,16 @@
 @extends('back_front.admin')
 @section('content')
 <div class="title_page"><h1>Profil</h1></div>
+@if (!empty($profile->description_p ))     
 <section class="block">  
 <div class="container">
 
    <div class="col-lg-12">
 
-    {{-- @if(isset($profile))
-        <form action="{{route('profile_a_up',['id'=>$profile->id])}}" method="POST"> --}}
-            {{--enctype obligatoire pour pouvoir télécharger mon image--}}
-    {{-- @else --}}
+
         <form method="post" action="{{route('profile_create')}}" enctype="multipart/form-data" 
         class="dropzone" id="dropzone">
-    {{-- @endif  --}}
+
         @csrf
 
 
@@ -33,9 +31,13 @@
 </div>    
 <br>   
 </section>
+@else
+<p></p>
+@endif 
 
 <br>
 <br>
+@if (empty($profile->description_p ))     
 <section class="block">
     <div id="content">     
         @foreach ($profile_p as $profile )
@@ -98,6 +100,9 @@
         </div>
     </div>
         </section>
+        @else
+<p></p>
+@endif 
 <br>
 <br>
 <br>
