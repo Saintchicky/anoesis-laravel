@@ -91,7 +91,12 @@ Route::get('year/delete/{id}','Admin\YearController@delete')->name('delete_year'
 
 // ------------------Album--------------------------
 
-Route::post('gallery/store','Admin\GalleryController@store')->name('gal_create');
+        // ------------Photo-------------
+
+Route::post('gallery/store','Admin\GalleryController@store')->name('photo_create');
 Route::post('gallery/update_order','Admin\GalleryController@updateOrder')->name('update_order');
+Route::get('gallery/up/{id}','Admin\GalleryController@up')->name('photo_modif');
+Route::post('gallery/up/{id?}','Admin\GalleryController@updatePhoto')->name('photo_create_up_store');
+Route::get('gallery/delete/{id}','Admin\GalleryController@delete')->name('delete_photo');
 
 });

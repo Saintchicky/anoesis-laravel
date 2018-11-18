@@ -424,6 +424,7 @@ figure {
   margin-left: 15px;
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 .hamburger:hover,
 .hamburger:focus,
@@ -751,4 +752,48 @@ td.highlight {
     .tour-btn {
         max-width: 100%;
     }
+}
+/* ------------------Album----------------- */
+
+#sortable li {
+  cursor: grab;
+}
+/* -------------------Modal album------------ */
+.modal-content{
+  background: black;
+}
+
+.close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
+  color: #fff;
+  opacity: 2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(104,104,104,0.8);
+  border-radius: .25rem;
+}
+
+.cont_img:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }

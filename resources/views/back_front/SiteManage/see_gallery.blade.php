@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-lg-12">
                <br>
-                    <form method="post" action="{{route('gal_create')}}" enctype="multipart/form-data" class="dropzone" id="dropzone">
+                    <form method="post" action="{{route('photo_create')}}" enctype="multipart/form-data" class="dropzone" id="dropzone">
                         @csrf
                         <input type="hidden" name="id_year"  id="id_year" value="{{$years->id}}">
                         <div class="dz-message" data-dz-message><span>Glisser vos fichiers ici</span></div>
@@ -18,10 +18,15 @@
             </div>
         </div>
          @include('back_front.SiteManage.gallery_pict')
+         <div class="modal fade" id="modalForm_g" tabindex="-1" role="dialog" data-backdrop="static">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" id="modal_content"></div>
+            </div>
+        </div>
     </div>
 <section>
-<!--
-<div class="container">
+
+{{-- <div class="container">
             <h1>Galerie</h1>
             <hr>
             <br>
@@ -66,11 +71,7 @@
         </div>
     </div>
       @endforeach   
-</div>
-    <div class="modal fade" id="modalForm" tabindex="-1" role="dialog" data-backdrop="static">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content" id="modal_content"></div>
-        </div>
-    </div>
-    -->
+</div> --}}
+
+
 @endsection

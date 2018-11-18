@@ -72,10 +72,10 @@
 
             <div class="dropdown-header text-center">Gestion Site</div>
           
-            <li><a href="{{route('profile_a')}}"><span class="fas fas fa-clone"></span> Profil</a></li>
-            <li><a href="{{route('dates')}}"><span class="fas fas fa-clone"></span> Date</a></li>
-            <li><a href="{{route('musics')}}"><span class="fas fas fa-clone"></span> Musique</a></li>
-            <li><a href="{{route('years')}}"><span class="fas fas fa-clone"></span> Année | | Album</a></li>
+            <li><a href="{{route('profile_a')}}"><i class="fas fa-user-circle"></i> Profil</a></li>
+            <li><a href="{{route('dates')}}"><i class="far fa-calendar-alt"></i> Date</a></li>
+            <li><a href="{{route('musics')}}"><i class="fas fa-music"></i> Musique</a></li>
+            <li><a href="{{route('years')}}"><i class="far fa-images"></i> Année | | Album</a></li>
             {{-- <li><a href="{{route('page')}}"><span class="fas fas fa-clone"></span> Création Page</a></li> --}}
 
   

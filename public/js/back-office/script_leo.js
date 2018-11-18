@@ -575,7 +575,7 @@ function ajaxLoad(filename) {
 
     // ----------------Ajax Gallery---------------------
     var str = window.location.pathname;
-    if (str.startsWith("/admin/gallery")||str.startsWith("/all_g")) {
+    if (str.startsWith("/admin/gallery")) {
     function ajaxLoad(filename, content) {
         content = typeof content !== 'undefined' ? content : 'content';
         $.ajax({
@@ -584,7 +584,6 @@ function ajaxLoad(filename) {
             contentType: false,
             success: function (data) {
                 $("#" + content).html(data);
-                $(".summernote_galery").summernote('code');
 
     // --------------Charateres counting-------------------
                 var maxCharactersT = 191;
@@ -601,7 +600,7 @@ function ajaxLoad(filename) {
 
                 var maxCharacters = 255;
                 $('#characterLeft').text(maxCharacters + ' Lettres Restantes');
-                $('#focus').keyup(function () {
+                $('#description_pict').keyup(function () {
                     var textLength = $(this).val().length;
                     if (textLength >= maxCharacters) {
                         $('#characterLeft').text('Vous avez atteint la limite de ' + maxCharacters + ' lettres');
@@ -613,12 +612,9 @@ function ajaxLoad(filename) {
             $('#modal_btn').click(function(e){
                 var form = $('form#frm');
                 var data = {
-                    id_page: $('#id_page_g').val(),
                     title: $('#title').val(),
-                    description: $('#focus').val(),
-                    description_page: $('#focus_p').val(),
-                    is_featured: $("#is_featured").is(':checked')  ? 1 : 0,
-                    is_main: $("#is_main").is(':checked')  ? 1 : 0,
+                    description_pict: $('#description_pict').val(),
+                    is_main_photo: $("#is_main_photo_p").is(':checked')  ? 1 : 0,
                    
                     
                 };
@@ -660,14 +656,14 @@ function ajaxLoad(filename) {
         });
     }
     
-    $('#modalForm').on('show.bs.modal', function (event) {
+    $('#modalForm_g').on('show.bs.modal', function (event) {
         var btn = $(event.relatedTarget);
         ajaxLoad(btn.data('href'), 'modal_content');
     });
     
-    $('#modalForm').on('shown.bs.modal', function () {
-        $('#focus').trigger('focus')
-    });
+    // $('#modalForm').on('shown.bs.modal', function () {
+    //     $('#focus').trigger('focus')
+    // });
 
     // ------------Alert MSG DELETE---------------------
 

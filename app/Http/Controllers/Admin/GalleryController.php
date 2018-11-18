@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Redirect;
 use App\Gallery;
 
 class GalleryController extends Controller
@@ -34,5 +35,38 @@ class GalleryController extends Controller
         }
         
         return response('Update Successfully.', 200);
+    }
+    public function up (Request $request)
+    {
+        if ($request->isMethod('get')){
+            $thumb_note = Gallery::find($request->id);   
+        }
+        return view('back_front.note.note_up_gallery',compact("thumb_note"));
+    }
+    public function updatePhoto(Request $request)
+    {
+     $mode_update = false;
+        if(is_numeric($request->id)){
+            $mode_update = true;
+        }
+        if($mode_update){
+        
+            $imageUpload = Gallery::find($request->id);
+            
+        }else{
+            
+            $imageUpload = new Gallery();
+        }
+        $imageUpload->title = $request->title; 
+        $imageUpload->description_pict = $request->description_pict; 
+        $imageUpload->is_main_photo = $request->is_main_photo;
+        $imageUpload->save();   
+        return Redirect::back();
+    }
+    public function delete(Request $request)
+    {
+        $imageUpload = Gallery::find($request->id);
+        $imageUpload->delete(); 
+        return Redirect::back();  
     }
 }
