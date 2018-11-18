@@ -1,38 +1,40 @@
 @extends('back_front.admin')
 @section('content')
 <div class="title_page"><h1>Profil</h1></div>
-@if (!empty($profile->description_p ))     
+@if (isset($profile->description_p ))   
 <section class="block">  
-<div class="container">
-
-   <div class="col-lg-12">
-
-
-        <form method="post" action="{{route('profile_create')}}" enctype="multipart/form-data" 
-        class="dropzone" id="dropzone">
-
-        @csrf
-
-
-        <div class="form-group">
+    <div class="container">
+    
+       <div class="col-lg-12">
+    
+    
+            <form method="post" action="{{route('profile_create')}}" enctype="multipart/form-data" 
+            class="dropzone" id="dropzone">
+    
+            @csrf
+    
+    
+            <div class="form-group">
+                            
                         
-                    
+                       
+                        <textarea  id="description_p" type="text" class="form-control summernote" name="description_p" rows="10"></textarea>
+            
+                    </div> 
+                    <div class="dz-message" data-dz-message><span>Glisser vos fichiers ici</span></div>
+    
                    
-                    <textarea  id="description_p" type="text" class="form-control summernote" name="description_p" rows="10"></textarea>
-        
-                </div> 
-                <div class="dz-message" data-dz-message><span>Glisser vos fichiers ici</span></div>
+            </form>
+            <br>
+            <button class="btn btn-outline-primary float-right" id="reload_btn">Valider</button>  
+        </div>
+    </div>    
+    <br>   
+    </section>  
 
-               
-        </form>
-        <br>
-        <button class="btn btn-outline-primary float-right" id="reload_btn">Valider</button>  
-    </div>
-</div>    
-<br>   
-</section>
 @else
 <p></p>
+
 @endif 
 
 <br>

@@ -450,7 +450,7 @@ function ajaxLoad(filename) {
 
 }
 
-    //-----------------Ajax Musics--------------------
+    //-----------------Ajax Year--------------------
 
 
 
@@ -608,6 +608,10 @@ function ajaxLoad(filename) {
                         var count = maxCharacters - textLength;
                         $('#characterLeft').text(count + ' Lettres Restantes');
                     }
+                });
+                $('[data-toggle=confirmation]').confirmation({
+                    rootSelector: '[data-toggle=confirmation]',
+                    // other options
                 });
             $('#modal_btn').click(function(e){
                 var form = $('form#frm');
