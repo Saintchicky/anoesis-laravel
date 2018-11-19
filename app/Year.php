@@ -13,4 +13,9 @@ class Year extends Model
     {
         return $this->belongsToMany(Gallery::class,'id_year');
     }
+
+       public function Video()
+    {
+        return $this->belongsToMany(Video::class,'id_year');
+    }
 }

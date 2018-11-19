@@ -9,7 +9,7 @@
             <div class="container">
                     <div class="row">
                             <div class="col-md-12">
-                                            <div class="container">
+        
                                                             
                                                     <h2>1. Créer Année</h2>
                                                     <br>
@@ -24,7 +24,7 @@
                                                             </div>
                                                            
                                                     </form>
-                                            </div>
+                                   
                             </div>
                     </div>
             </div>
@@ -37,7 +37,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div id="content">
-          
+                            <h2>2. Editer Photos et Vidéos</h2>
                    
                                     <br>
                                     <br>
@@ -50,7 +50,8 @@
                                             </a>
                                 </th>
      
-                                    <th scope="col">Album Photos | | Vidéos</th>
+                                    <th scope="col">Photos</th>
+                                    <th scope="col">Vidéos</th>
                                     <th scope="col">Action</th>
 
                                 </tr>
@@ -61,6 +62,7 @@
                 
                                 <td>{{$year->year_album}}</td>
                                 <td><a href="{{route('gallery_edit',['id'=>$year->id])}}"  class="btn btn-outline-info btn-sm" role="button">Edition</a></td>
+                                <td><a href="{{route('video_edit',['id'=>$year->id])}}"  class="btn btn-outline-info btn-sm" role="button">Edition</a></td>
                                 <td><a href="{{route('delete_year',['id'=>$year->id])}}"  class="btn btn-outline-danger btn-sm" role="button">Supprimer l'album</a></td>
                                 </tr>
                             @endforeach

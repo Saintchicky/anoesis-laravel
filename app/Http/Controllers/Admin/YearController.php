@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Year;
 use App\Gallery;
+use App\Video;
 use Illuminate\Support\Facades\Redirect;
 
 class YearController extends Controller
@@ -66,6 +67,15 @@ class YearController extends Controller
         $years = Year::find($request->id);
        ;
         return view('back_front.SiteManage.see_gallery',compact('gallery','years'));
+    }
+
+    public function viewByVideo(Request $request) {
+        $id_year = $request->id;
+        $year = Year::find($id_year);
+        $videos = Video::where('id_year',$id_year)->get();
+        $years = Year::find($request->id);
+       ;
+        return view('back_front.SiteManage.video',compact('years','videos'));
     }
 
 

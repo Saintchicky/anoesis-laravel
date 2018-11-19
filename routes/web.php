@@ -88,6 +88,7 @@ Route::post('year/up/{id?}','Admin\YearController@upStore')->name('year_create_u
 Route::get('year/delete/{id}','Admin\YearController@delete')->name('delete_year');
 
  Route::get('gallery/{id}','Admin\YearController@viewByGallery')->name('gallery_edit');
+ Route::get('video/{id}','Admin\YearController@viewByVideo')->name('video_edit');
 
 // ------------------Album--------------------------
 
@@ -98,5 +99,15 @@ Route::post('gallery/update_order','Admin\GalleryController@updateOrder')->name(
 Route::get('gallery/up/{id}','Admin\GalleryController@up')->name('photo_modif');
 Route::post('gallery/up/{id?}','Admin\GalleryController@updatePhoto')->name('photo_create_up_store');
 Route::get('gallery/delete/{id}','Admin\GalleryController@delete')->name('delete_photo');
+
+        // -------------Video-------------
+
+
+Route::post('video/store','Admin\VideoController@store')->name('video_create');
+Route::get('video/up/{id}','Admin\VideoController@up')->name('video_modif');
+Route::post('video/up/{id?}','Admin\VideoController@updateVideo')->name('video_create_up_store');
+Route::get('video/delete/{id}','Admin\VideoController@delete')->name('delete_video');
+
+
 
 });

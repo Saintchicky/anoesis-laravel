@@ -85,7 +85,7 @@
                             <img src="//placehold.it/1170x658" class="img-fluid">
                         </div>
                     </div>
-                </div>
+            </div>
           
     </section>
 

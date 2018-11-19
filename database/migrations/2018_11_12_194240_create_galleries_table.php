@@ -18,8 +18,6 @@ class CreateGalleriesTable extends Migration
             $table->string('title',100)->nullable();
             $table->string('description_pict',300)->nullable();
             $table->string('photo_pict')->nullable();
-            $table->string('url_youtube')->nullable();
-            $table->boolean('is_main_youtube')->nullable();
             $table->boolean('is_main_photo')->nullable();
             $table->integer('order')->unsigned()->default(0);
             $table->timestamps();

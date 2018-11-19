@@ -702,8 +702,77 @@ function ajaxLoad(filename) {
 
 
     }
-    // -------------------------Edit Plan--------------
+
     
-  
+   //-----------------Ajax Video--------------------
+
+
+
+   var str = window.location.pathname;
+    
+    // bien mettre start with pour que la fonction se déclenche
+    if (str.startsWith("/admin/video")) {
+    function ajaxLoad(filename, content) {
+        content = typeof content !== 'undefined' ? content : 'content';
+        $.ajax({
+            type: "GET",
+            url: filename,
+            contentType: false,
+            success: function (data) {
+                $("#" + content).html(data);
+    
+                
+            $('#modal_btn').click(function(e){
+                var form = $('form#frm');
+                var data = {
+                    is_main_youtube: $("#is_main_youtube").is(':checked')  ? 1 : 0,
+                    url_youtube: $("#url_youtube_p").val()
+          
+                };
+                var url = form.attr("action");
+    
+                console.log(form,data, url);
+    
+                $.ajax({
+                    type: form.attr('method'),
+                    url: url,
+                    data: data,
+                    cache: false,
+                    success: function (data) {
+                        $('.is-invalid').removeClass('is-invalid');
+                        if (data.fail) {
+                            for (control in data.errors) {
+                                $('input[name=' + control + ']').addClass('is-invalid');
+                                $('#error-' + control).html(data.errors[control]);
+                            }
+                        } else {
+                            $('#modalForm').modal('hide');
+                            document.location.reload();
+                       }
+                    },
+                    error: function (xhr, textStatus, errorThrown) {
+                        console.log("Error: " + errorThrown + xhr + textStatus );
+                        console.log( xhr  );
+                    }
+                });
+                return false;
+    
+            });
+    
+            },
+            error: function (xhr, status, error) {
+                alert(xhr.responseText);
+            }
+        });
+    }
+    
+    $('#modalForm').on('show.bs.modal', function (event) {
+        var btn = $(event.relatedTarget);
+        ajaxLoad(btn.data('href'), 'modal_content');
+    });
+    
+
+    }
+
     
 });
