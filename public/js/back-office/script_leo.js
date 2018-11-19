@@ -720,7 +720,11 @@ function ajaxLoad(filename) {
             contentType: false,
             success: function (data) {
                 $("#" + content).html(data);
-    
+
+                $('[data-toggle=confirmation]').confirmation({
+                    rootSelector: '[data-toggle=confirmation]',
+                    // other options
+                });
                 
             $('#modal_btn').click(function(e){
                 var form = $('form#frm');
@@ -774,5 +778,6 @@ function ajaxLoad(filename) {
 
     }
 
+    
     
 });

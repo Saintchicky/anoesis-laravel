@@ -56,43 +56,35 @@
         <section class="block">
 
                         <div class="container">
-                                        <div class="row no-gutters block">
+                                        <div class="row  block">
                                                
                                                 @foreach ($videos as $video )
-                                                {{-- @if (!empty ($video->url_youtube)) --}}
+                                   
                                              
-                                                <div class="col-md-8">
-                                                        @if($video->is_main_youtube == 1) 
+                                   
+                                                @if($video->is_main_youtube == 1) 
                                                       <div class="col-md-4 btn-success">
                                                             <div class="embed-responsive embed-responsive-16by9">
                                                                     <iframe class="embed-responsive-item" src="https://{{$video->url_youtube}}"></iframe>
                                                                    
                                                                 </div>
+                                                                <a  data-target="#modalForm" data-toggle="modal" data-href="{{ route('video_modif',['id'=>$video->id]) }}" id="add" class="btn btn-outline-secondary" type="button">
+                                                                        Modifier
+                                                                    </a>
                                                       </div>
-                                                        <div class="col-md-4">
-                                                        <a  data-target="#modalForm" data-toggle="modal" data-href="{{ route('video_modif',['id'=>$video->id]) }}" id="add" class="btn btn-outline-light" type="button">
-                                                                Modifier
-                                                            </a>
-                                                        </div>
-                                                        @else
+                                                     
+                                                @else
                                                         <div class="col-md-4 btn-light">
                                                                         <div class="embed-responsive embed-responsive-16by9">
                                                                                 <iframe class="embed-responsive-item" src="https://{{$video->url_youtube}}"></iframe>
                                                                                
                                                                             </div>
+                                                                            <a  data-target="#modalForm" data-toggle="modal" data-href="{{ route('video_modif',['id'=>$video->id]) }}" id="add" class="btn btn-outline-secondary" type="button">
+                                                                                Modifier
+                                                                            </a>
                                                                   </div>
-                                                                    <div class="col-md-4">
-                                                                    <a  data-target="#modalForm" data-toggle="modal" data-href="{{ route('video_modif',['id'=>$video->id]) }}" id="add" class="btn btn-outline-light" type="button">
-                                                                            Modifier
-                                                                        </a>
-                                                                    </div>
-                                                @endif
-
-                                                                
-                                                              
-                                                </div>
-                                         
-                                        
+                                                            
+                                                @endif                                        
                                                 @endforeach 
                                                                                         
                                         </div>

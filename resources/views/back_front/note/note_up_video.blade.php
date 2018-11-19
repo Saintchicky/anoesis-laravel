@@ -1,14 +1,14 @@
 <div class="modal-header">
-    <h5 class="modal-title">Vidéo à modifier</h5>
-    <span> <a href="{{route('delete_video',['id'=>$videos->id])}}"  class="btn btn-outline-danger" 
-            data-toggle="confirmation"
-                data-title="Souhaitez-vous supprimer ?"
-                data-btn-ok-label="Oui"
-                data-btn-ok-class="btn-danger"
-                data-btn-cancel-label="Non"
-                data-btn-ok-class="btn-primary"
-                data-placement="right"
-            role="button">Supprimer la vidéo</a></span>
+    <h5 class="modal-title">Vidéo à modifier <span> <a href="{{route('delete_video',['id'=>$videos->id])}}"  class="btn btn-outline-danger btn-sm" 
+        data-toggle="confirmation"
+            data-title="Souhaitez-vous supprimer ?"
+            data-btn-ok-label="Oui"
+            data-btn-ok-class="btn-danger"
+            data-btn-cancel-label="Non"
+            data-btn-ok-class="btn-primary"
+            data-placement="right"
+        role="button">Supprimer la vidéo</a></span></h5>
+    
     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
     <span aria-hidden="true">&times;</span>
     </button>

@@ -1,6 +1,5 @@
 <div class="modal-header">
-        <h5 class="modal-title">Édition Photo</h5>
-        <span> <a href="{{route('delete_photo',['id'=>$thumb_note->id])}}"  class="btn btn-outline-danger" 
+        <h5 class="modal-title">Édition Photo  <span> <a href="{{route('delete_photo',['id'=>$thumb_note->id])}}"  class="btn btn-outline-danger btn-sm" 
             data-toggle="confirmation"
                 data-title="Souhaitez-vous supprimer ?"
                 data-btn-ok-label="Oui"
@@ -8,7 +7,8 @@
                 data-btn-cancel-label="Non"
                 data-btn-ok-class="btn-primary"
                 data-placement="right"
-            role="button">Supprimer la photo</a></span>
+            role="button">Supprimer la photo</a></span></h5>
+       
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
         </button>
