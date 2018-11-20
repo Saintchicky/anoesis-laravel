@@ -9,7 +9,7 @@
                         @foreach ($gallery as $photo )
                         @if($photo->is_main_photo == 1)
                             <div class="hovereffect">
-                                <img class="img-responsive" src="{{asset('storage/photo/'.$photo->photo_pict )}}" alt="" width='255px' height='255px'>
+                                <img class="img-responsive fix" src="{{asset('storage/photo/'.$photo->photo_pict )}}" alt="" width='255px' height='255px'>
                                 <div class="overlay">         
                             @if($photo->Year) 
                             <h2>{{$photo->Year->year_album}}</h2>

@@ -408,7 +408,12 @@ h2 {
 }
 
 /* -------------Photo Over--------- */
-
+.img-thumbnail{
+    background-color: transparent;
+}
+.fix{
+    object-fit: cover;
+}
 .hovereffect {
     /* width:100%; */
     height:100%;
@@ -497,3 +502,40 @@ h2 {
     -webkit-transition-delay:.2s;
     transition-delay:.2s;
     }
+/* --------------footer link---------------- */
+.link{
+    color: #D0D0D0;
+}
+a.eigth:before{
+    left:0;
+  }
+  a.eigth:after{
+    right:0;
+  }
+
+  a.before:hover:before,a.after:hover:after{
+    width:100%;
+  }
+  a.before:before,a.after:after{
+    height:2px;
+    height:0.1rem;
+    width:0;
+    background:#fff;
+  }
+  a:hover{
+      color:#fff;
+      text-decoration:none;
+  }
+  a.before:before,a.after:after{
+    content: "";
+    transition:0.5s all ease;
+    -webkit-backface-visibility:hidden;
+            backface-visibility:hidden;
+    position:absolute;
+  }
+  a.before:before{
+    top:-1em;
+  }
+  a.after:after{
+    bottom:-0.25em;
+  }

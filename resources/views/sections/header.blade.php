@@ -19,9 +19,8 @@
                         <div class="social text-right social_resp">
                                         <a class="home" href="{{route('home')}}">ACCUEIL</a>
                                 <ul class="social-network social-circle">
-                                    {{-- <li><a href="#" class="icoRss" title="Rss"><i class="fas fa-rss"></i></a></li> --}}
-                                    <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/AnoesisTrio/" class="icoFacebook" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                    {{-- <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li> --}}
                                     {{-- <li><a href="#" class="icoGoogle" title="Google +"><i class="fab fa-google-plus"></i></a></li>
                                     <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin"></i></a></li> --}}
                                 </ul>				
