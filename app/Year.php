@@ -11,7 +11,7 @@ class Year extends Model
 
        public function Gallery()
     {
-        return $this->belongsToMany(Gallery::class,'id_year');
+        return $this->hasMany(Gallery::class,'id_year');
     }
 
        public function Video()

@@ -81,14 +81,11 @@
        
                 
           
-        <div class="col-md-7 p_justify">
+        <div class="col-md-6 p_justify">
             {{-- pour traduire les tags html de la bdd --}}
             <p>{!! html_entity_decode($profile->description_p) !!}</p> 
-    
-                 
-  
-      </div>
-      <div class="col-md-5">
+        </div>
+      <div class="col-md-6">
             <div>
           <figure>
       <img class="img-fluid" src="{{asset('storage/profile/'.$profile->pict_profile)}}" alt="">

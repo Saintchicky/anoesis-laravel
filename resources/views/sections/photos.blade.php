@@ -6,53 +6,22 @@
        <div id='band-members'>
             <div class='row block'>
                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        @foreach ($gallery as $photo )
+                        @if($photo->is_main_photo == 1)
                             <div class="hovereffect">
-                                <img class="img-responsive" src="http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg" alt="" width='255px' height='255px'>
-                                <div class="overlay">
-                                   <h2>2018</h2>
-                                   <a class="info" href="{{route('gallery')}}">Voir l'album</a>
+                                <img class="img-responsive" src="{{asset('storage/photo/'.$photo->photo_pict )}}" alt="" width='255px' height='255px'>
+                                <div class="overlay">         
+                            @if($photo->Year) 
+                            <h2>{{$photo->Year->year_album}}</h2>
+                            <a class="info" href="{{route('gallery',['id'=>$photo->Year->id])}}">Voir l'album</a>
+                            @endif
                                 </div>
                             </div>
+                        @endif   
+                        @endforeach
+                           
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                            <div class="hovereffect">
-                                <img class="img-responsive" src="http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg" alt="" width='255px' height='255px'>
-                                <div class="overlay">
-                                   <h2>2018</h2>
-                                   <a class="info" href="{{route('gallery')}}">Voir l'album</a>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                            <div class="hovereffect">
-                                <img class="img-responsive" src="http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg" alt="" width='255px' height='255px'>
-                                <div class="overlay">
-                                   <h2>2018</h2>
-                                   <a class="info" href="{{route('gallery')}}">Voir l'album</a>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                            <div class="hovereffect">
-                                <img class="img-responsive" src="http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg" alt="" width='255px' height='255px'>
-                                <div class="overlay">
-                                   <h2>2018</h2>
-                                   <a class="info" href="{{route('gallery')}}">Voir l'album</a>
-                                </div>
-                            </div>
-                    </div>
-                {{-- <div class='col-md-4 col-tab-4 band-members-single'>
-                    <p>2018</p>
-                <a href=""><img src='' alt='Band member' width='255px' height='255px' /></a>
-                </div>
-                <div class='col-md-4 col-tab-4 band-members-single'>
-                    <p>2019</p>
-                    <img src='http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg' alt='Band member' width='255px' height='255px' />
-                </div>
-                <div class='col-md-4 col-tab-4 band-members-single'>
-                    <p>2020</p>
-                    <img src='http://viblaze.co.uk/MyFolder/MyWorks/BandSite/bandmember.jpg' alt='Band member' width='255px' height='255px' />
-                </div> --}}
+                    
             </div>            
         </div>
         <span id="contact"></span>

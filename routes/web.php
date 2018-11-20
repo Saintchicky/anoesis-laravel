@@ -11,12 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
-Route::get('/gallery', function () {
-    return view('gallery');
-})->name('gallery');
+
+// -----------------Home Webiste------------
+Route::get('/', 'Front\MainController@home')->name('home');
+
+Route::get('/gallery/{id}', 'Front\MainController@gallery')->name('gallery');
 
 
 // ------------Site MAINTENANCE---------

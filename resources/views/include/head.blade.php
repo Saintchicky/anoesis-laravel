@@ -5,8 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
                 <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
-
+       
         <title>Anoesis</title>
+        <meta name="description" content="Jeune Trio de musiciens" />
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
