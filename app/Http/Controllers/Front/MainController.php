@@ -40,15 +40,15 @@ class MainController extends Controller
     public function storeNl (Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'email' => 'regex:/^.+@.+$/i',
+            'email' => 'required|email|unique:news_letters,email',
         ]);
 
         if ($validator->fails()) {
-            return redirect('/')->withErrors($validator)->withInput();
-    }
+            return redirect('/')->with('error_NL','Ce mail existe déjà :-(')->withErrors($validator)->withInput();
+        }
 
         $News_l = new NewsLetter;
-        $News_l->email_NL = $request->email_NL; 
+        $News_l->email = $request->email; 
         $News_l->save();
         
         return Redirect::back()->with('success_NL','Merci beacoup !!! On se voit bientôt à nos concerts');  
