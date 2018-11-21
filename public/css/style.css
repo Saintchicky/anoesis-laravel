@@ -33,6 +33,16 @@ html {
   .navbar-expand-lg .navbar-collapse {
     font-size: 1.2em;
   }
+
+  /* -----------Msg success NL */
+.alert_nl{
+    position: absolute;
+}
+.invalid-feedback{
+    width: none;
+    position: absolute;
+    top: 3em;
+}
 /* -----------Video---------- */
 
 .video_resp{

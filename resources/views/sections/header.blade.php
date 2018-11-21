@@ -11,20 +11,15 @@
                                 <form class="form-inline my-2 my-lg-0" action="{{route('news_letters')}}" method="POST">
                                         @csrf
                                                 <input class="form-control transparent-input mr-sm-2 {{ $errors->has('email') ? 'is-invalid' : '' }}"  type="email" name="email" id="email" placeholder="@NewsLetters" aria-label="Search">
-                                                {!! $errors->first('email', '<div class="invalid-feedback">:message</div>') !!}
                                                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Valider</button>
+                                                {!! $errors->first('email', '<div class="invalid-feedback">:message</div>') !!}
                                 </form>
-                                {{-- @if(session()->get('success_NL'))
-                                        <div class="alert alert-success">
+                                @if(session()->get('success_NL'))
+                                        <div class="alert alert-success alert_nl">
                                                 {{ session()->get('success_NL') }}  
                                         </div><br/>
                                 @endif
-                                @if(session()->get('error_NL'))
-                                <div class="alert alert-danger">
-                                                {{ session()->get('error_NL') }}  
-                                </div><br/>
-                                @endif --}}
-
+                        
                         </div>
                 </div>
                 <div class="col-md-4 align-self-center">

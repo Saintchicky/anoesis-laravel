@@ -1,14 +1,11 @@
 
     // Works everywhere
     $(document).ready(function () {
-    
-    // Hide/show animation hamburger function
-    // $('.navbar-toggler').on('click', function () {
-    
-    // Take this line to first hamburger animations
-    // $('.animated-icon1').toggleClass('open');
-    
-    // });
+    // remove with fade alert
+
+    $(".alert").fadeOut(10000);
+
+    // -------  Lightbox -------
     $('a[data-rel^=lightcase]').lightcase({
         slideshowAutoStart:false,
     });

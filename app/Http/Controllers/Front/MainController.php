@@ -44,14 +44,14 @@ class MainController extends Controller
         ]);
 
         if ($validator->fails()) {
-            return redirect('/')->with('error_NL','Ce mail existe déjà :-(')->withErrors($validator)->withInput();
+            return redirect('/')->withErrors($validator)->withInput();
         }
 
         $News_l = new NewsLetter;
         $News_l->email = $request->email; 
         $News_l->save();
         
-        return Redirect::back()->with('success_NL','Merci beacoup !!! On se voit bientôt à nos concerts');  
+        return Redirect::back()->with('success_NL','Merci à toi, On se voit bientôt à nos concerts :-)');  
 
     }
 }
