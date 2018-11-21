@@ -18,6 +18,7 @@ Route::get('/', 'Front\MainController@home')->name('home');
 Route::get('/gallery/{id}', 'Front\MainController@gallery')->name('gallery');
 
 
+
 // ------------Site MAINTENANCE---------
 // A route for shut it down, user must be authenticated to do this:
 Route::get('shut/app/down', function() 
@@ -35,6 +36,11 @@ Route::prefix('admin')->group(function () {
     Artisan::call('up');
         return Redirect::back();
 })->name('mode_up');
+
+
+//----------------New letters----------------
+
+Route::post('/new_letters/store', 'Front\MainController@storeNl')->name('news_letters');
 
 //.............. Authentification ................
 Auth::routes();

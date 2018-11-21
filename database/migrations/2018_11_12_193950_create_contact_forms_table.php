@@ -17,7 +17,6 @@ class CreateContactFormsTable extends Migration
             $table->increments('id');
             $table->string('name')->nullable();
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
             $table->longText('message')->nullable();
             $table->timestamps();
         });

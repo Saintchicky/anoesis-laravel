@@ -8,10 +8,16 @@
                 </div>
                 <div class="col-md-4 d-flex justify-content-center align-self-center">
                         <div class="news-letters">
-                                <form class="form-inline my-2 my-lg-0">
-                                        <input class="form-control transparent-input mr-sm-2" type="email" placeholder="@NewsLetters" aria-label="Search">
-                                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Valider</button>
+                                <form class="form-inline my-2 my-lg-0" action="{{route('news_letters')}}" method="POST">
+                                        @csrf
+                                                <input class="form-control transparent-input mr-sm-2 {{ $errors->has('email_NL') ? 'is-invalid' : '' }}"  type="email" name="email_NL" id="email_NL" placeholder="@NewsLetters" aria-label="Search">
+                                                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Valider</button>
                                 </form>
+                                @if(session('success'))
+                                        <div class="alert alert-success">
+                                                {{session('success_NL')}}
+                                        </div>
+                                @endif
                         </div>
                 </div>
                 <div class="col-md-4 align-self-center">

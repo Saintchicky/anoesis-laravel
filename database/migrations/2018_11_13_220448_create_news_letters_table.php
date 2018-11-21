@@ -16,7 +16,6 @@ class CreateNewsLettersTable extends Migration
         Schema::create('news_letters', function (Blueprint $table) {
             $table->increments('id');
             $table->string('email_NL')->unique();
-            $table->timestamp('email_verified_at')->nullable();
             $table->timestamps();
         });
     }

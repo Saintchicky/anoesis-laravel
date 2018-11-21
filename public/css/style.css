@@ -24,7 +24,15 @@ footer{
     color: #fff;
     padding: 1.5em;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
+  /* ------------Navbar------------ */
+
+  .navbar-expand-lg .navbar-collapse {
+    font-size: 1.2em;
+  }
 /* -----------Video---------- */
 
 .video_resp{
@@ -522,7 +530,7 @@ a.eigth:before{
     width:0;
     background:#fff;
   }
-  a:hover{
+  .link:hover{
       color:#fff;
       text-decoration:none;
   }
@@ -539,3 +547,18 @@ a.eigth:before{
   a.after:after{
     bottom:-0.25em;
   }
+  .a_perso{
+    position: absolute;
+    right: 10.1em;
+}
+
+  #social-linkedin:hover {
+    color: #4099FF;
+ 
+}
+
+
+#social-linkedin{
+    display:none;
+}
+

@@ -47,5 +47,19 @@
             // On page load
             stickyToggle(sticky, stickyWrapper, $(window));
         });
+
+        // -------------Footer-------------
+
+        $( "#linklm" ).mouseenter(
+            function() {
+              $( "#social-linkedin" ).show();
+              $( ".name_l").hide();
+            });
+          $( "#linklm" ).mouseleave(
+            function() {
+              $( "#social-linkedin" ).hide();
+              $( ".name_l").show();
+            }
+          );
     
     });
