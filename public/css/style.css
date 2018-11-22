@@ -572,3 +572,52 @@ a.eigth:before{
     display:none;
 }
 
+/* ---------form footer------- */
+
+.message_form {
+    position: unset;
+}
+.modal-content{
+    background: black;
+  }
+.modal-lg{
+    max-width: 80%;
+}
+
+/* // ---------Maitenance mode---------- */
+
+main {
+    height: 100%;
+    display: flex;
+    margin: 0 20px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main h1 {
+    font-size: 3em;
+    font-weight: 100;
+    color: #F44;
+    background: transparent;
+    margin: 0;
+  }
+  main h2 {
+    font-size: 1.5em;
+    font-weight: 100;
+    margin-bottom: 0;
+    background: transparent;
+    color: #fff;
+  }
+  main h3 {
+    font-size: 1.5em;
+    font-weight: 100;
+    margin-top: 0;
+  }
+  main a {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #F44;
+    text-decoration: none;
+  }
+  

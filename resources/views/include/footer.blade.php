@@ -8,7 +8,7 @@
                 <p>ANOESIS TRIO : <a href="mailto:anoesistrio@gmail.com" class="link eigth before after">anoesistrio@gmail.com</a></p>
             </div>
             <div class="col-md-4 align-self-center">
-                <p>MENTIONS LÉGALES</p>
+                <p>@include('mentions.mentions')</p>
             </div>
             <div class="col-md-4 align-self-center">
                 <p id="linklm">

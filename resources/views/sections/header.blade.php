@@ -3,7 +3,11 @@
             <div class="row" style="width:100%;">
                 <div class="col-md-4">
                         <div class="img-title">
+                        @if(is_file(storage_path('framework/down')))
+                        <a href="{{route('home_mode')}}"><img class="main-title" src="{{asset('img/title.png')}}" alt="title"></a>
+                        @else
                         <a href="{{route('home')}}"><img class="main-title" src="{{asset('img/title.png')}}" alt="title"></a>
+                        @endif
                             </div>
                 </div>
                 <div class="col-md-4 d-flex justify-content-center align-self-center">
@@ -25,7 +29,11 @@
                 <div class="col-md-4 align-self-center">
                        
                         <div class="social text-right social_resp">
+                                        @if(is_file(storage_path('framework/down')))
+                                        <a class="home" href="{{route('home_mode')}}">ACCUEIL</a>
+                                        @else
                                         <a class="home" href="{{route('home')}}">ACCUEIL</a>
+                                        @endif
                                 <ul class="social-network social-circle">
                                     <li><a href="https://www.facebook.com/AnoesisTrio/" class="icoFacebook" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                                     {{-- <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li> --}}

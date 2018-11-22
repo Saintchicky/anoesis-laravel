@@ -41,6 +41,7 @@ Route::prefix('admin')->group(function () {
 //----------------New letters----------------
 
 Route::post('/new_letters/store', 'Front\MainController@storeNl')->name('news_letters');
+Route::post('/message/store', 'Front\MainController@storeMessage')->name('message');
 
 //.............. Authentification ................
 Auth::routes();
@@ -50,9 +51,9 @@ Route::get('back-office', 'HomeController@index')->name('home_view');
 
 /*-------Front Site Mode MAINTENANCE-------*/
 
-Route::get('mode', function () {
-    return view('home');
-})->name('home_mode');
+Route::get('mode', 'Front\MainController@home')->name('home_mode');
+Route::get('mode/gallery/{id}', 'Front\MainController@gallery')->name('gallery_mode');
+
 
 /*--------------NewsLetters et ContactForm----------*/
 
@@ -92,8 +93,8 @@ Route::get('year/up','Admin\YearController@up')->name('year_modif');
 Route::post('year/up/{id?}','Admin\YearController@upStore')->name('year_create_up_store');
 Route::get('year/delete/{id}','Admin\YearController@delete')->name('delete_year');
 
- Route::get('gallery/{id}','Admin\YearController@viewByGallery')->name('gallery_edit');
- Route::get('video/{id}','Admin\YearController@viewByVideo')->name('video_edit');
+ Route::get('edit/gallery/{id}','Admin\YearController@viewByGallery')->name('gallery_edit');
+ Route::get('edit/video/{id}','Admin\YearController@viewByVideo')->name('video_edit');
 
 // ------------------Album--------------------------
 

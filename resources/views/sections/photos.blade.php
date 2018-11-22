@@ -13,7 +13,11 @@
                                 <div class="overlay">         
                             @if($photo->Year) 
                             <h2>{{$photo->Year->year_album}}</h2>
+                            @if(is_file(storage_path('framework/down')))
+                            <a class="info" href="{{route('gallery_mode',['id'=>$photo->Year->id])}}">Voir l'album</a>
+                            @else
                             <a class="info" href="{{route('gallery',['id'=>$photo->Year->id])}}">Voir l'album</a>
+                            @endif
                             @endif
                                 </div>
                             </div>

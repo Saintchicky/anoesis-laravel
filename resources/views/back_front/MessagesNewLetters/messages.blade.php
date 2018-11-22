@@ -37,7 +37,7 @@
             <tr>
             @foreach($bdd_NL as $new_l)
                 <th scope="row">{{$new_l->id}}</th>
-                <td>{{$new_l->email_NL}}</td>
+                <td>{{$new_l->email}}</td>
                 <td>{{ \Carbon\Carbon::parse($new_l->created_at)->format('d/m/Y')}}</td>
                 <td><a class="btn btn-outline-light btn-sm"
                 data-toggle="confirmation"
