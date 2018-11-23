@@ -557,9 +557,9 @@ a.eigth:before{
   a.after:after{
     bottom:-0.25em;
   }
-  .a_perso{
+.a_perso {
     position: absolute;
-    right: 10.1em;
+    left: 62%;
 }
 
   #social-linkedin:hover {
@@ -620,4 +620,3 @@ main {
     color: #F44;
     text-decoration: none;
   }
-  

@@ -557,6 +557,7 @@ function ajaxLoad(filename) {
                 order: order,
             },
             success: function (response) {
+
                 if (response.status == "success") {
                     console.log(response);
                 } else {
@@ -575,7 +576,7 @@ function ajaxLoad(filename) {
 
     // ----------------Ajax Gallery---------------------
     var str = window.location.pathname;
-    if (str.startsWith("/admin/edit/gallery")) {
+    if (str.startsWith("/admin/gallery")) {
     function ajaxLoad(filename, content) {
         content = typeof content !== 'undefined' ? content : 'content';
         $.ajax({
@@ -711,7 +712,7 @@ function ajaxLoad(filename) {
    var str = window.location.pathname;
     
     // bien mettre start with pour que la fonction se déclenche
-    if (str.startsWith("/admin/edit/video")) {
+    if (str.startsWith("/admin/video")) {
     function ajaxLoad(filename, content) {
         content = typeof content !== 'undefined' ? content : 'content';
         $.ajax({

@@ -2,14 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\public",
-    "\\public\\css",
     "\\public\\js",
     "\\public\\js\\back-office",
-    "\\resources",
-    "\\resources\\views",
-    "\\resources\\views\\back_front",
-    "\\resources\\views\\back_front\\SiteManage"
+    "\\public\\storage",
+    "\\public\\storage\\photo",
+    "\\public\\storage\\profile"
   ],
-  "SelectedNode": "\\resources\\views\\back_front\\SiteManage\\modif_music.blade.php",
+  "SelectedNode": "\\public\\js\\back-office\\script_leo.js",
   "PreviewInSolutionExplorer": false
 }
