@@ -24,6 +24,7 @@ footer{
     color: #fff;
     padding: 1.5em;
 }
+/*to scroll slowly when you click content anchor*/
 html {
     scroll-behavior: smooth;
   }
