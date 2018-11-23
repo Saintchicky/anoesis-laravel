@@ -13,16 +13,17 @@
             <div class="title">
                 <h3>Vous avez un nouveau message !</h3>
             </div>
-            <br>  
+            <br>
+            <div class="msg">
+                {{$bodyMessage}}
+            </div>
             <div class="infos">
                     <div class="nomEmail">
                         <p>Son nom et prénom: {{$name}}</p>
                         <p>Envoyé par: {{$email}}</p>
                     </div>
                 </div>  
-            <div class="msg">
-                {{$bodyMessage}}
-            </div>
+            
             <br>
         </div>
     </div>
@@ -38,7 +39,7 @@
 
     .mail{
         border: solid black 5px;
-        width: 35%;
+        width: 100%;
         display:flex;
         justify-content: center;
         flex-direction: column;

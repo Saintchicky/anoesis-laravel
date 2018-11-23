@@ -59,7 +59,7 @@ html {
 }
 .img-title{
     width: 61%;
-    text-align: right;
+    text-align: left;
 }
 
 @media (max-width: 768px) {
@@ -582,6 +582,10 @@ a.eigth:before{
   }
 .modal-lg{
     max-width: 80%;
+}
+
+.modal-open {
+    padding-right: 0px !important;
 }
 
 /* // ---------Maitenance mode---------- */
