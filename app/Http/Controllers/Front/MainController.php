@@ -46,14 +46,16 @@ class MainController extends Controller
         ]);
 
         if ($validator->fails()) {
-            return redirect('/')->withErrors($validator)->withInput();
+            // return redirect('/')->withErrors($validator)->withInput();
+            return response()->json(['errors'=>$validator->errors()],422);
         }
 
         $News_l = new NewsLetter;
         $News_l->email = $request->email; 
         $News_l->save();
         
-        return Redirect::back()->with('success_NL','Merci à toi, On se voit bientôt à nos concerts :-)');  
+        // return Redirect::back()->with('success_NL','Merci à toi, On se voit bientôt à nos concerts :-)');  
+        return response()->json(['code'=>200,'success_nl' => 'Merci à toi «' .$News_l->email. '», On se voit bientôt à nos concerts :-)']);
 
     }
     public function storeMessage(Request $request)
@@ -65,7 +67,8 @@ class MainController extends Controller
         ]);
 
         if ($validator->fails()) {
-            return redirect('/#contact')->withErrors($validator)->withInput();
+            // return redirect('/#contact')->withErrors($validator)->withInput();
+            return response()->json(['errors'=>$validator->errors()],422);
         }
 
 
@@ -88,7 +91,8 @@ class MainController extends Controller
 
         });
         
-        return redirect('/#contact')->with('success_m','Merci à toi, On a bien reçu ton message');
+        // return redirect('/#contact')->with('success_m','Merci à toi, On a bien reçu ton message');
 
+        return response()->json(['code'=>200,'success' => 'Merci à toi «' .$formContact->name. '» On a bien reçu ton message :-)']);
     }
 }

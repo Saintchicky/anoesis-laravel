@@ -38,11 +38,17 @@ html {
   /* -----------Msg success NL */
 .alert_nl{
     position: absolute;
+    top: 223.6em;
+    width: 76%;
+
 }
-.invalid-feedback{
-    width: none;
+.newl{
+    top: 3.2em;
+}
+.newslsuccess{
+    width: 38em;
     position: absolute;
-    top: 3em;
+    top: 1%;
 }
 /* -----------Video---------- */
 
@@ -560,7 +566,7 @@ a.eigth:before{
   }
 .a_perso {
     position: absolute;
-    left: 62%;
+    left: 65%;
 }
 
   #social-linkedin:hover {
@@ -571,6 +577,11 @@ a.eigth:before{
 
 #social-linkedin{
     display:none;
+}
+.error{
+    color:red;
+    font-size: 84%;
+    position: absolute;
 }
 
 /* ---------form footer------- */
