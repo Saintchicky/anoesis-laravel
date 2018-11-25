@@ -14,7 +14,7 @@
                         <div class="news-letters">
                                 <form id="newl" class="form-inline my-2 my-lg-0" action="{{route('news_letters')}}" method="POST">
                                         @csrf
-                                                <input class="form-control transparent-input mr-sm-2"  type="email" name="email" id="email" placeholder="@NewsLetters" aria-label="Search">
+                                                <input class="form-control transparent-input mr-sm-2"  type="email" name="email_nl" id="email_nl" placeholder="@NewsLetters" aria-label="Search">
                                                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Valider</button>
                                            
                                 </form>
