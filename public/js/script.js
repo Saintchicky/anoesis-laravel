@@ -81,11 +81,8 @@ $('#newl').submit(function(e){
        },
        error: function (xhr) {
            $.each(xhr.responseJSON.errors, function(key,value) {
-           //   $('#validation-errors').append('<div class="alert alert-danger">'+value+'</div');
-           $('#newl').on('click',function(e){
            var msg = '<div class="error newl" for="'+key+'">'+value+'</div>';
            $('input[name="' + key + '"], select[name="' + value + '"]').addClass('is-invalid').after(msg);
-           });
          }); 
         }
    });
