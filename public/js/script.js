@@ -48,6 +48,7 @@
    // ---------------Ajax NL-----------
 
 $('#newl').submit(function(e){
+
    var form_nl = $('form#newl');
    var formData =  $(this).serialize();
    var formnls = $('#form-news');
