@@ -5,9 +5,10 @@
     <div class="container">
        <div id='band-members'>
             <div class='row block'>
+              @foreach ($gallery as $photo )
+                 @if($photo->is_main_photo == 1)
                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                        @foreach ($gallery as $photo )
-                        @if($photo->is_main_photo == 1)
+                      
                             <div class="hovereffect">
                                 <img class="img-responsive fix" src="{{asset('storage/photo/'.$photo->photo_pict )}}" alt="" width='255px' height='255px'>
                                 <div class="overlay">         
@@ -21,10 +22,11 @@
                             @endif
                                 </div>
                             </div>
-                        @endif   
-                        @endforeach
+                       
                            
                     </div>
+                     @endif   
+                        @endforeach
                     
             </div>            
         </div>

@@ -1,7 +1,7 @@
 @extends('back_front.admin')
 @section('content')
 <div class="title_page"><h1>Profil</h1></div>
-@if (isset($profile->description_p ))   
+@if (empty($profile->description_p ))   
 <section class="block">  
     <div class="container">
     
@@ -39,7 +39,7 @@
 
 <br>
 <br>
-@if (empty($profile->description_p ))     
+@if (empty($profile->pict_profile ))     
 <section class="block">
     <div id="content">     
         @foreach ($profile_p as $profile )
@@ -81,9 +81,9 @@
        
                 
           
-        <div class="col-md-6 p_justify">
+        <div class="col-md-6">
             {{-- pour traduire les tags html de la bdd --}}
-            <p>{!! html_entity_decode($profile->description_p) !!}</p> 
+            <p class="text-justify">{!! html_entity_decode($profile->description_p) !!}</p> 
         </div>
       <div class="col-md-6">
             <div>

@@ -6,7 +6,7 @@
                 <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
        
-        <title>Anoesis</title>
+        <title>Anoesis, c'est un groupe de fou</title>
         <meta name="description" content="Jeune Trio de musiciens" />
 
         <!-- Fonts -->
@@ -26,4 +26,3 @@
         <script src="{{asset('js/script.js')}}" type="text/javascript"></script>
 
     </head>
-    

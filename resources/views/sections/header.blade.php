@@ -3,11 +3,11 @@
             <div class="row" style="width:100%;">
                 <div class="col-md-4">
                         <div class="img-title">
-                        @if(is_file(storage_path('framework/down')))
+                       @if( (is_file(storage_path('framework/down')))  &&  (auth()->check()) )
                         <a href="{{route('home_mode')}}"><img class="main-title" src="{{asset('img/title.png')}}" alt="title"></a>
-                        @else
+                       @else
                         <a href="{{route('home')}}"><img class="main-title" src="{{asset('img/title.png')}}" alt="title"></a>
-                        @endif
+                       @endif
                             </div>
                 </div>
                 <div class="col-md-4 d-flex justify-content-center align-self-center">
@@ -25,7 +25,7 @@
                 <div class="col-md-4 align-self-center">
                        
                         <div class="social text-right social_resp">
-                                        @if(is_file(storage_path('framework/down')))
+                                        @if( (is_file(storage_path('framework/down')))  &&  (auth()->check()) )
                                         <a class="home" href="{{route('home_mode')}}">ACCUEIL</a>
                                         @else
                                         <a class="home" href="{{route('home')}}">ACCUEIL</a>

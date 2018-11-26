@@ -3,11 +3,7 @@
     "",
     "\\public",
     "\\public\\js",
-    "\\public\\js\\back-office",
-    "\\public\\storage",
-    "\\public\\storage\\photo",
-    "\\public\\storage\\profile"
+    "\\public\\js\\back-office"
   ],
-  "SelectedNode": "\\public\\js\\back-office\\script_leo.js",
   "PreviewInSolutionExplorer": false
 }

@@ -68,8 +68,8 @@ html {
 
   /* -----------Msg success NL */
 .alert_nl{
-    position: absolute;
-    top: 223.6em;
+   /* position: absolute;
+    top: 223.6em;*/
     width: 76%;
 
 }

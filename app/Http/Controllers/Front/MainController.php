@@ -55,7 +55,7 @@ class MainController extends Controller
         $News_l->save();
         
         // return Redirect::back()->with('success_NL','Merci à toi, On se voit bientôt à nos concerts :-)');  
-        return response()->json(['code'=>200,'success_nl' => 'Merci à toi «' .$News_l->email_nl. '», On se voit bientôt à nos concerts :-)']);
+        return response()->json(['code'=>200,'success_nl' => 'Merci à toi «' .$News_l->email. '», On se voit bientôt à nos concerts :-)']);
 
     }
     public function storeMessage(Request $request)

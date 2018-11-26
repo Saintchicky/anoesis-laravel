@@ -17,7 +17,11 @@ Route::get('/', 'Front\MainController@home')->name('home');
 
 Route::get('/album/{id}', 'Front\MainController@gallery')->name('gallery');
 
+ 
+//----------------New letters And ContactForm----------------
 
+Route::post('/new_letters/store', 'Front\MainController@storeNl')->name('news_letters');
+Route::post('/message/store', 'Front\MainController@storeMessage')->name('message');
 
 // ------------Site MAINTENANCE---------
 // A route for shut it down, user must be authenticated to do this:
@@ -38,10 +42,6 @@ Route::prefix('admin')->group(function () {
 })->name('mode_up');
 
 
-//----------------New letters----------------
-
-Route::post('/new_letters/store', 'Front\MainController@storeNl')->name('news_letters');
-Route::post('/message/store', 'Front\MainController@storeMessage')->name('message');
 
 //.............. Authentification ................
 Auth::routes();
@@ -51,8 +51,8 @@ Route::get('back-office', 'HomeController@index')->name('home_view');
 
 /*-------Front Site Mode MAINTENANCE-------*/
 
-Route::get('mode', 'Front\MainController@home')->name('home_mode');
-Route::get('mode/album/{id}', 'Front\MainController@gallery')->name('gallery_mode');
+Route::get('mode', 'Front\MainModeController@home')->name('home_mode');
+Route::get('mode/album/{id}', 'Front\MainModeController@gallery')->name('gallery_mode');
 
 
 /*--------------NewsLetters et ContactForm----------*/
