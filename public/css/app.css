@@ -10476,11 +10476,11 @@ a.text-dark:focus {
 }
 
 body {
-    background-image: url("/img/fonda.jpg");
+    background-image: url("/img/fondcool.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: black;
-    background-size: cover;
+    /*background-size: cover;*/
     background-position: center;
 
 }
