@@ -47,7 +47,7 @@ Route::prefix('admin')->group(function () {
 Auth::routes();
 
 /*---------------For Log into Back-office-----------*/
-Route::get('back-office', 'HomeController@index')->name('home_view');
+Route::get('back-office', 'Admin\HomeController@index')->name('home_view');
 
 /*-------Front Site Mode MAINTENANCE-------*/
 
