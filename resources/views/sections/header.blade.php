@@ -33,7 +33,7 @@
                                 <ul class="social-network social-circle">
                                     <li><a href="https://www.facebook.com/AnoesisTrio/" class="icoFacebook" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                                     <li><a href="https://soundcloud.com/anoesistrio" class="icoSoundcloud" title="Soundcloud"><i class="fab fa-soundcloud"></i></a></li> 
-                                    <li><a href="https://anoesistrio.bandcamp.com/" class="icoBandcamp" title="Bandcamp"><i class="fab fa-bandcamp"></i></li>
+                                    <li><a href="https://anoesistrio.bandcamp.com/" class="icoBandcamp" title="Bandcamp"><i class="fab fa-bandcamp"></i></a></li>
                                    
                                   {{--  <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin"></i></a></li> --}}
                                 </ul>				
