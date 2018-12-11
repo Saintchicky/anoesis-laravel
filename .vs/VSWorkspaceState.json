@@ -1,17 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\app\\Http",
-    "\\app\\Http\\Controllers",
-    "\\app\\Http\\Controllers\\Admin",
-    "\\app\\Http\\Controllers\\Front",
-    "\\public\\css",
-    "\\public\\css\\back-office",
-    "\\public\\js",
-    "\\resources\\views",
-    "\\resources\\views\\include",
-    "\\resources\\views\\sections"
+    ""
   ],
-  "SelectedNode": "\\public",
   "PreviewInSolutionExplorer": false
 }

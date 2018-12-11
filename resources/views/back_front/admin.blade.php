@@ -1,4 +1,4 @@
-@include('back_front.include.head')
+<div class="img-back"></div> @include('back_front.include.head')
 
         @include('back_front.include.menu')
      
