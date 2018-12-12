@@ -10502,6 +10502,9 @@ body {
     z-index:-1;
     top:0;
 
-}
+  }
+  .modal-lg {
+    max-width: 100%;
+  }
 }
 
