@@ -619,6 +619,11 @@ a.eigth:before{
 .modal-lg{
     max-width: 80%;
 }
+@media (max-width: 768px) {
+    .modal-lg{
+        max-width: 100%;
+    }
+}
 
 .modal-open {
     padding-right: 0px !important;
