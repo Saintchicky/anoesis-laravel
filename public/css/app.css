@@ -10480,8 +10480,28 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: black;
-    /*background-size: cover;*/
     background-position: center;
 
+}
+.img-back{
+  display:none;
+}
+
+@media (max-width: 768px) {
+  body{
+    background-image: none;
+  }
+
+  .img-back {
+    display:block;
+    background-image: url("/img/fond.jpg");
+    background-position: center;
+    height:100%;
+    position:fixed;
+    width:100%;
+    z-index:-1;
+    top:0;
+
+}
 }
 
