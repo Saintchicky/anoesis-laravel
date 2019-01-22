@@ -15,7 +15,7 @@ class AddKeysToVideosTable extends Migration
     {
         Schema::table('videos', function (Blueprint $table) {
             $table->integer('id_year')->unsigned()->nullable();
-            $table->foreign('id_year')->references('id')->on('years')->oneDelete('set null');
+            $table->foreign('id_year')->references('id')->on('years')->onDelete('set null');
         });
     }
 
