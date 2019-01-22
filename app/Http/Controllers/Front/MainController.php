@@ -61,7 +61,7 @@ class MainController extends Controller
     public function storeMessage(Request $request)
     {   
         $validator = Validator::make($request->all(), [
-            'name' => 'required|between:2,20|regex:/(^[A-Za-z- ]+$)+/',
+            'name' => 'required|between:2,20|regex:/(^[a-zA-Z0-9áàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ._\s- ]+$)+/',
             'email' => 'required|email|unique:contact_forms',
             'message' => 'required|max:300'
         ]);

@@ -1,11 +1,23 @@
 <section>
+ @forelse ($gallery as $photo )
+    @if ($loop->first)
     <h1>PHOTOS | | VIDEOS </h1>
     <br>
     <br>
+    @endif
+    @empty
+    <p></p>
+@endforelse
+@forelse ($gallery as $photo )
+                    @if ($loop->first)
     <div class="container">
-       <div id='band-members'>
+       <div id="band-members">
             <div class='row block'>
-              @foreach ($gallery as $photo )
+                    @endif
+                    @empty
+                    <p></p>
+@endforelse
+              @forelse($gallery as $photo )
                  @if($photo->is_main_photo == 1)
                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                       
@@ -21,15 +33,15 @@
                             @endif
                             @endif
                                 </div>
-                            </div>
-                       
-                           
+                            </div>  
                     </div>
-                     @endif   
-                        @endforeach
-                    
+                     @endif 
+                     @empty
+                    <p></p>  
+                @endforelse
             </div>            
         </div>
-        <span id="contact"></span>
     </div>
+
+    <span id="contact"></span>
 </section>

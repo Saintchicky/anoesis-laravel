@@ -19,9 +19,15 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#musics">MUSIQUES</a>
                             </li>
+                            @forelse ($gallery as $photo )
+                            @if ($loop->first)
                               <li class="nav-item">
                                 <a class="nav-link" href="#photos">PHOTOS/VIDEOS</a>
                             </li>
+                            @endif
+                            @empty
+                            <p></p>
+                             @endforelse
                               <li class="nav-item">
                                 <a class="nav-link" href="#contact">CONTACT</a>
                             </li>
