@@ -78,6 +78,7 @@ class MainController extends Controller
         $formContact->message = $request->input('message');
         $formContact->save();
 
+
           //Envoi d'un email 
           $data = array(
             'name' => $request->name,
