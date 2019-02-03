@@ -116,7 +116,7 @@ $('#newl').submit(function(e){
        },
        error: function (xhr) {
            $.each(xhr.responseJSON.errors, function(key,value) {
-           var msg = '<div class="error newl" for="'+key+'">'+value+'</div>';
+           var msg = '<small class="error newl" for="'+key+'">'+value+'</small>';
            $('input[name="' + key + '"], select[name="' + value + '"]').addClass('is-invalid').after(msg);
          }); 
         }
