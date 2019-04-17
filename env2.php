@@ -10,8 +10,8 @@ DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=anoesis_bdd
-DB_USERNAME=root
-DB_PASSWORD=root
+DB_USERNAME=----
+DB_PASSWORD=----
 
 BROADCAST_DRIVER=log
 CACHE_DRIVER=file
@@ -27,7 +27,7 @@ MAIL_DRIVER=smtp
 MAIL_HOST=smtp.gmail.com
 MAIL_PORT=587
 MAIL_USERNAME=leopoldmaltret@gmail.com
-MAIL_PASSWORD="dvsbyhyfzqlhtuoc"
+MAIL_PASSWORD="-------"
 MAIL_ENCRYPTION=tls
 
 PUSHER_APP_ID=
